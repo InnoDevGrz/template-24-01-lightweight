@@ -1,11 +1,18 @@
 <?php
 
+
+add_action('acf/init', function () {
+    if (function_exists('acf_register_block_type')) {
+        tsc__Imageslider::init();
+    }
+
+});
+
+
+
+
 /*
  * in acf.php:
- * $init_dailyMenu = new tsc__DailyMenu();
- * $init_dailyMenu->init_backend_tsc();
- *
- *
  * view: template-parts/blocks/image-slider.php
  * js: slider.js
  * */

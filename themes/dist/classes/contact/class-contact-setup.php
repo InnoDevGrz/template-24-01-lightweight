@@ -1,17 +1,26 @@
 <?php
-// include acf fields to backend
+add_action('acf/init', function () {
+    if (function_exists('acf_register_block_type')) {
+
+        tsc__contactSetup::init();
+
+    }
+
+});
+
 
 // in acf.php:
 //$contact = tsc__contactSetup();
 //$contact->initBackend();
 
 /*** class to set acf fields and for using field content ***/
-class tsc__contactSetup 
+class tsc__contactSetup
 {
     protected $footer_info_title = "";
     protected $footer_info_text = "";
 
-    static function init(){
+    static function init()
+    {
         /*** !IMPORTANT ! ***/
         /*** ACF option page : register page in inc/acf-fields.php or here first ***/
         /*** ACF field construction: set fields in inc/acf-fields.php or here first ***/
@@ -38,7 +47,6 @@ class tsc__contactSetup
         endif;
 
     }
-
 
 
     static function register_AcfBlockType()
@@ -84,8 +92,6 @@ class tsc__contactSetup
                 'mode' => false,
                 'align' => 'left',
             ));
-
-
 
 
         endif;

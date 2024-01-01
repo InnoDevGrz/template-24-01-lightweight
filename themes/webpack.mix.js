@@ -6,6 +6,7 @@ const js_out_dir = 'assets/js';
 
 // css task definitions
 const css_tasks = [
+
     {name: 'css-style', file: './src/scss/style.scss', dest: '.'},
     {name: 'css-login', file: './src/scss/login.scss', dest: css_out_dir},
     {name: 'css-slider', file: './src/scss/slider.scss', dest: css_out_dir},
@@ -38,3 +39,20 @@ for (const task of js_tasks) {
 
 mix.setPublicPath('dist').options({processCssUrls: false});
 
+mix.browserSync({
+    proxy: 'http://inno-24-01.local/',
+    files: [
+        'dist/**/*',
+        'src/**/*',
+    ],
+    events: {
+        add: true,
+        change: true,
+        unlink: true,
+    },
+    ghostMode: {
+        clicks: true,
+        forms: true,
+        scroll: true,
+    },
+});

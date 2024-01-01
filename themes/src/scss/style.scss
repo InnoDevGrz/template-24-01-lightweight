@@ -34,27 +34,27 @@ Text-Domain: ize
 @import "base/gutenberg";
 @import "base/has-parallax";
 @import "base/images";
-@import "base/nav-slide";
+// @import "base/nav-slide";
 @import "base/screen-reader";
 @import "base/scroll-top";
 @import "base/sidebar-menu";
-@import "base/custom-post-types";
-@import "base/partner-slider";
+// @import "base/custom-post-types";
+// @import "base/partner-slider";
 
 
 
 
 
 /* posts */
-@import "posts/single";
-@import "posts/grid";
-@import "posts/navigation";
+// @import "posts/single";
+// @import "posts/grid";
+// @import "posts/navigation";
 
 /* acf-blocks */
 @import "blocks/header-slider";
 @import "blocks/image-slider";
-@import "blocks/text-slider";
-@import "blocks/image-box";
+// @import "blocks/text-slider";
+// @import "blocks/image-box";
 @import "blocks/image-teaser";
 
 /* templates */

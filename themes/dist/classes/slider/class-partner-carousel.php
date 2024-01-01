@@ -1,6 +1,14 @@
 <?php
 
-tsc_PartnerCarousel::register__AcfOptionPage();
+add_action('acf/init', function () {
+    if (function_exists('acf_register_block_type')) {
+        tsc_PartnerCarousel::register__AcfOptionPage();
+    }
+});
+
+
+
+
 
 class tsc_PartnerCarousel
 {

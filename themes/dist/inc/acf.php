@@ -27,27 +27,6 @@ if (function_exists('acf_add_options_page')) {
     });
 
 
-    add_action('acf/init', function () {
-        if (function_exists('acf_register_block_type')) {
-
-            /* *
-             * Register block types & option pages
-             * */
-
-            tsc__contactSetup::init();
-
-            /* option: */
-            tsc__HeaderSlider::init();
-            tsc__Imageslider::init();
-            tsc__TextSlider::init();
-            tsc__BlockJustifiedGallery::init();
-            //tsc__ImageBox::init();
-
-        }
-
-    });
-
-
     //add_filter('acf/settings/show_admin', '__return_false');
 
 

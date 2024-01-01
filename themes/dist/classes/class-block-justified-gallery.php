@@ -1,5 +1,12 @@
 <?php
 
+add_action('acf/init', function () {
+    if (function_exists('acf_register_block_type')) {
+        tsc__BlockJustifiedGallery::init();
+    }
+
+});
+
 class tsc__BlockJustifiedGallery
 {
 

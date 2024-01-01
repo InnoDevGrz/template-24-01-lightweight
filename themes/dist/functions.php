@@ -23,14 +23,14 @@ require_once(get_template_directory() . '/classes/contact/class-contact-infos.ph
 
 require_once(get_template_directory() . '/classes/slider/class-image-slider.php');
 require_once(get_template_directory() . '/classes/slider/class-header-slider.php');
-require_once(get_template_directory() . '/classes/slider/class-text-slider.php');
-require_once(get_template_directory() . '/classes/slider/class-partner-carousel.php');
+// require_once(get_template_directory() . '/classes/slider/class-text-slider.php');
+// require_once(get_template_directory() . '/classes/slider/class-partner-carousel.php');
 
 
 
 
 require_once(get_template_directory() . '/classes/class-block-justified-gallery.php');
-require_once(get_template_directory() . '/classes/class-image-box.php');
+// require_once(get_template_directory() . '/classes/class-image-box.php');
 require_once(get_template_directory() . '/classes/class-image-teaser.php');
 require_once(get_template_directory() . '/classes/class-privacy-policy.php');
 require_once(get_template_directory() . '/classes/class-impressum.php');

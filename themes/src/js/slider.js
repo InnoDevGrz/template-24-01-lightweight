@@ -15,9 +15,6 @@ for (let i = 0; i < el.length; i++) {
 
 
 
-
-
-
 let element = document.querySelectorAll('.image-slider .splide');
 for (let i = 0; i < element.length; i++) {
     new Splide(element[i], {
@@ -31,6 +28,7 @@ for (let i = 0; i < element.length; i++) {
     }).mount();
 }
 
+/*
 let textslider = document.querySelectorAll('.text-slider .splide');
 for (let i = 0; i < textslider.length; i++) {
     new Splide(textslider[i], {
@@ -44,7 +42,7 @@ for (let i = 0; i < textslider.length; i++) {
     }).mount();
 }
 
-
+*/
 /*
 let eventslider = document.querySelectorAll('.block-events .splide');
 for (let i = 0; i < eventslider.length; i++) {
@@ -60,7 +58,7 @@ for (let i = 0; i < eventslider.length; i++) {
 }
 */
 
-
+/*
 let partner_carousel = document.querySelectorAll('.partner-carousel .splide');
 for (let i = 0; i < partner_carousel.length; i++) {
     new Splide(partner_carousel[i], {
@@ -90,3 +88,4 @@ for (let i = 0; i < partner_carousel.length; i++) {
         }
     }).mount();
 }
+*/
