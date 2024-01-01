@@ -41,14 +41,14 @@ body {
   font-family: "Catamaran", sans-serif;
   background-color: var(--wp--preset--color--base-bg);
   color: var(--wp--preset--color--base);
-  font-weight: 200;
+  font-weight: 400;
   padding-top: 60px;
   overflow-x: hidden;
   position: relative;
 }
 @media (min-width: 1200px) {
   body {
-    padding-top: 80px;
+    padding-top: 100px;
   }
 }
 
@@ -84,16 +84,16 @@ body {
   font-family: "Catamaran", sans-serif;
   background-color: var(--wp--preset--color--base-bg);
   color: var(--wp--preset--color--base);
-  font-weight: 200;
+  font-weight: 400;
 }
 
 b, strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .is-style-base {
   text-transform: none !important;
-  font-weight: 200 !important;
+  font-weight: 400 !important;
   color: var(--wp--preset--color--base);
   font-family: "Catamaran", sans-serif !important;
   font-size: 18.9px;
@@ -200,8 +200,8 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Catamaran", serif;
-  font-weight: 400;
+  font-family: "Poppins", serif;
+  font-weight: 700;
   color: var(--wp--preset--color--base);
   line-height: 1.1;
   margin-top: 1em;
@@ -210,40 +210,40 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 66.15px;
+  font-size: 47.25px;
 }
 
 h2:not(.post-title) {
-  font-size: 46.305px;
+  font-size: 37.8px;
 }
 
 h3 {
-  font-size: 33.075px;
+  font-size: 32.13px;
 }
 
 h4:not(.post-title) {
-  font-size: 13.23px 1.5;
+  font-size: 18.9px 1.25;
 }
 
 h5 {
-  font-size: 15.876px;
+  font-size: 18.9px;
 }
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 99.225px;
+    font-size: 47.25px;
   }
   h2:not(.post-title) {
-    font-size: 63px;
+    font-size: 36px;
   }
   h3 {
-    font-size: 45px;
+    font-size: 31.5px;
   }
   h4:not(.post-title) {
     font-size: 18px 1.5;
   }
   h5 {
-    font-size: 21.6px;
+    font-size: 22.5px;
   }
 }
 @font-face {
@@ -348,7 +348,6 @@ ul.is-style-highlights li:before, [class^=icon-], [class*=" icon-"] {
 
 a {
   color: var(--wp--preset--color--third);
-  font-weight: 200;
   -webkit-transition: color 250ms linear;
   transition: color 250ms linear;
   text-decoration: none;
@@ -394,7 +393,7 @@ ul.is-style-highlights li:before {
   position: relative;
   padding-left: 15px;
   margin-top: 0.8em;
-  font-family: "Catamaran", serif;
+  font-family: "Poppins", serif;
   color: var(--wp--preset--color--base);
 }
 .is-style-triangle-secondary > li:first-child, .is-style-triangle-primary > li:first-child {
@@ -428,8 +427,8 @@ ul.is-style-highlights li:before {
 }
 
 #navbar {
-  font-family: "Catamaran", sans-serif !important;
-  font-weight: 600 !important;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 700 !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -462,29 +461,8 @@ ul.is-style-highlights li:before {
             align-items: flex-start;
     position: absolute;
     background-color: #fff;
-    font-weight: 200 !important;
-    height: 80px;
-  }
-  #navbar.scroll-down {
-    position: fixed;
-    -webkit-transition: all 0.6s ease-in-out;
-    transition: all 0.6s ease-in-out;
-  }
-  #navbar.scroll-down.recolor {
-    opacity: 0;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  #navbar.scroll-up {
-    position: fixed;
-    top: 0;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    opacity: 1;
-  }
-  #navbar.scroll-up.recolor {
-    -webkit-box-shadow: 0 4px 13px -6px rgba(0, 0, 0, 0.3);
-            box-shadow: 0 4px 13px -6px rgba(0, 0, 0, 0.3);
+    font-weight: 400 !important;
+    height: 100px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -505,7 +483,7 @@ ul.is-style-highlights li:before {
 @media (min-width: 1200px) {
   #navbar .brand a img,
   #navbar .brand a svg {
-    height: 75px !important;
+    height: 95px !important;
   }
 }
 #navbar .menu-brand {
@@ -518,6 +496,30 @@ ul.is-style-highlights li:before {
   #navbar .menu-brand img {
     height: 100px;
     width: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  #navbar.scroll-down {
+    position: fixed;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+  #navbar.scroll-down.recolor {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  #navbar.scroll-up {
+    position: fixed;
+    top: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+  }
+  #navbar.scroll-up.recolor {
+    -webkit-box-shadow: 0 4px 13px -6px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 13px -6px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -743,7 +745,7 @@ ul.is-style-highlights li:before {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    height: 80px;
+    height: 100px;
     overflow: visible;
     opacity: 1;
     pointer-events: auto;
@@ -849,12 +851,12 @@ ul.is-style-highlights li:before {
 }
 #primary-nav .nav-menu > li.current-menu-item > a {
   color: var(--wp--preset--color--third);
-  font-weight: 600;
+  font-weight: 700;
 }
 @media (min-width: 1200px) {
   #primary-nav .nav-menu > li.current-menu-item > a {
     color: var(--wp--preset--color--third);
-    font-weight: 600;
+    font-weight: 700;
   }
   #primary-nav .nav-menu > li.current-menu-item > a:hover {
     color: var(--wp--preset--color--third);
@@ -881,12 +883,12 @@ ul.is-style-highlights li:before {
   letter-spacing: 1.2px;
   color: var(--wp--preset--color--base);
   position: relative;
-  font-weight: 600;
+  font-weight: 700;
 }
 @media only screen and (min-width: 1200px) {
   #primary-nav .nav-menu > li > a {
     color: var(--wp--preset--color--base);
-    font-weight: 200;
+    font-weight: 400;
   }
   #primary-nav .nav-menu > li > a:after {
     content: "";
@@ -1348,104 +1350,101 @@ section,
 input[type=submit],
 .sib-default-btn,
 .wp-block-button .wp-block-button__link {
-  display: inline-block !important;
-  text-decoration: none !important;
-  text-align: center !important;
-  cursor: pointer !important;
-  border-radius: 4px !important;
-  position: relative !important;
-  padding: 0.8em 1em !important;
-  line-height: 1 !important;
-  margin-bottom: 1.1em !important;
-  margin-top: 1em !important;
-  color: var(--wp--preset--color--secondary) !important;
-  background: #ffffff !important;
-  border: 1px solid #ebebeb !important;
-  overflow: hidden !important;
-  -webkit-transition: all 0.3s linear !important;
-  transition: all 0.3s linear !important;
-  font-family: "Catamaran", sans-serif !important;
-  font-weight: 200 !important;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  position: relative;
+  padding: 0.8em 1em;
+  line-height: 1;
+  margin: 1em 0 1.1em 0;
+  color: var(--wp--preset--color--secondary);
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  overflow: hidden;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 400;
 }
 .btn:hover,
 .ff-btn:hover,
 input[type=submit]:hover,
 .sib-default-btn:hover,
 .wp-block-button .wp-block-button__link:hover {
-  color: #ffffff !important;
-  background-color: var(--wp--preset--color--secondary) !important;
+  color: #ffffff;
+  background-color: var(--wp--preset--color--secondary);
 }
 .btn:active,
 .ff-btn:active,
 input[type=submit]:active,
 .sib-default-btn:active,
 .wp-block-button .wp-block-button__link:active {
-  color: #ffffff !important;
-  background-color: var(--wp--preset--color--secondary) !important;
+  color: #ffffff;
+  background-color: var(--wp--preset--color--secondary);
 }
 
 .is-style-btn-primary .wp-block-button__link,
 .btn-primary {
-  display: inline-block !important;
-  text-decoration: none !important;
-  text-align: center !important;
-  cursor: pointer !important;
-  border-radius: 4px !important;
-  position: relative !important;
-  padding: 0.8em 1em !important;
-  line-height: 1 !important;
-  margin-bottom: 1.1em !important;
-  margin-top: 1em !important;
-  color: var(--wp--preset--color--primary) !important;
-  background: #ffffff !important;
-  border: 1px solid #ebebeb !important;
-  overflow: hidden !important;
-  -webkit-transition: all 0.3s linear !important;
-  transition: all 0.3s linear !important;
-  font-family: "Catamaran", sans-serif !important;
-  font-weight: 200 !important;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  position: relative;
+  padding: 0.8em 1em;
+  line-height: 1;
+  margin: 1em 0 1.1em 0;
+  color: var(--wp--preset--color--primary);
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  overflow: hidden;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 400;
 }
 .is-style-btn-primary .wp-block-button__link:hover,
 .btn-primary:hover {
-  color: #ffffff !important;
-  background-color: var(--wp--preset--color--primary) !important;
+  color: #ffffff;
+  background-color: var(--wp--preset--color--primary);
 }
 .is-style-btn-primary .wp-block-button__link:active,
 .btn-primary:active {
-  color: #ffffff !important;
-  background-color: var(--wp--preset--color--primary) !important;
+  color: #ffffff;
+  background-color: var(--wp--preset--color--primary);
 }
 
 .is-style-btn-secondary .wp-block-button__link,
 .btn-secondary {
-  display: inline-block !important;
-  text-decoration: none !important;
-  text-align: center !important;
-  cursor: pointer !important;
-  border-radius: 4px !important;
-  position: relative !important;
-  padding: 0.8em 1em !important;
-  line-height: 1 !important;
-  margin-bottom: 1.1em !important;
-  margin-top: 1em !important;
-  color: var(--wp--preset--color--secondary) !important;
-  background: #ffffff !important;
-  border: 1px solid #ebebeb !important;
-  overflow: hidden !important;
-  -webkit-transition: all 0.3s linear !important;
-  transition: all 0.3s linear !important;
-  font-family: "Catamaran", sans-serif !important;
-  font-weight: 200 !important;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  position: relative;
+  padding: 0.8em 1em;
+  line-height: 1;
+  margin: 1em 0 1.1em 0;
+  color: var(--wp--preset--color--secondary);
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  overflow: hidden;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 400;
 }
 .is-style-btn-secondary .wp-block-button__link:hover,
 .btn-secondary:hover {
-  color: #ffffff !important;
-  background-color: var(--wp--preset--color--secondary) !important;
+  color: #ffffff;
+  background-color: var(--wp--preset--color--secondary);
 }
 .is-style-btn-secondary .wp-block-button__link:active,
 .btn-secondary:active {
-  color: #ffffff !important;
-  background-color: var(--wp--preset--color--secondary) !important;
+  color: #ffffff;
+  background-color: var(--wp--preset--color--secondary);
 }
 
 .fluentform {
@@ -1465,7 +1464,6 @@ input[type=tel],
 input[type=password],
 input[type=search] {
   font-family: "Catamaran", sans-serif !important;
-  font-weight: 300 !important;
   width: 100%;
   background-color: var(--wp--preset--color--base-bg);
   border: 1px solid var(--wp--preset--color--border);
@@ -1494,7 +1492,6 @@ input[type=search][readonly] {
 
 textarea {
   font-family: "Catamaran", sans-serif !important;
-  font-weight: 300 !important;
   width: 100%;
   height: 130px;
   background-color: var(--wp--preset--color--base-bg);
@@ -1536,11 +1533,6 @@ input[type=file] {
 input[type=file]:focus {
   outline: none;
   border: 1px solid var(--wp--preset--color--secondary);
-}
-
-.ginput_container_consent {
-  font-size: 0.9em;
-  line-height: 1.1;
 }
 
 .follow.socials-footer-bar {
@@ -1611,8 +1603,8 @@ input[type=file]:focus {
   padding: 1.5em 0 0;
   background-color: var(--wp--preset--color--base);
   color: var(--wp--preset--color--base);
-  font-family: "Catamaran", sans-serif;
-  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 #page-footer .wrapper {
   padding-top: 2em;
@@ -1641,7 +1633,7 @@ input[type=file]:focus {
   }
 }
 #page-footer .wrapper #menu-footer-nav {
-  font-family: "Catamaran", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-left: 0;
 }
 #page-footer .wrapper #menu-footer-nav li {
@@ -1686,7 +1678,7 @@ input[type=file]:focus {
 }
 #page-footer .current-menu-item > a {
   color: var(--wp--preset--color--base);
-  font-weight: 600;
+  font-weight: bold;
   text-decoration: underline;
 }
 #page-footer .site-info {
@@ -2074,7 +2066,7 @@ figure {
 }
 .block-header-slider .wrapper .container .inner .title {
   color: #fff;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 1.5em;
   margin: 0 !important;
   padding: 0 !important;
@@ -2130,43 +2122,42 @@ figure {
   display: block;
 }
 .block-header-slider .wrapper .container .inner .header-btn {
-  display: inline-block !important;
-  text-decoration: none !important;
-  text-align: center !important;
-  cursor: pointer !important;
-  border-radius: 4px !important;
-  position: relative !important;
-  padding: 0.8em 1em !important;
-  line-height: 1 !important;
-  margin-bottom: 1.1em !important;
-  margin-top: 1em !important;
-  color: #ffffff !important;
-  background: transparent !important;
-  border: 1px solid #ffffff !important;
-  overflow: hidden !important;
-  -webkit-transition: all 0.3s linear !important;
-  transition: all 0.3s linear !important;
-  font-family: "Catamaran", sans-serif !important;
-  font-weight: 200 !important;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  position: relative;
+  padding: 0.8em 1em;
+  line-height: 1;
+  margin: 1em 0 1.1em 0;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid #ffffff;
+  overflow: hidden;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 400;
   -ms-flex-item-align: center;
       align-self: center;
   z-index: 10;
   padding: 0.6em 1em !important;
 }
 .block-header-slider .wrapper .container .inner .header-btn:hover {
-  color: transparent !important;
-  background-color: #ffffff !important;
+  color: transparent;
+  background-color: #ffffff;
 }
 .block-header-slider .wrapper .container .inner .header-btn:active {
-  color: transparent !important;
-  background-color: #ffffff !important;
+  color: transparent;
+  background-color: #ffffff;
 }
 .block-header-slider .wrapper .container .inner .header-btn:hover, .block-header-slider .wrapper .container .inner .header-btn:active {
   color: var(--wp--preset--color--secondary) !important;
 }
 
 .image-slider {
-  font-family: "Catamaran", serif;
+  font-family: "Poppins", serif;
   position: relative;
   overflow: hidden;
 }

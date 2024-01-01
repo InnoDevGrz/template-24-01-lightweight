@@ -7,27 +7,27 @@ h1, h2, h3, h4, h5 {
   margin-bottom: .3em;
   position: relative;
 }
-$headline-font-size-mobile: calc($base-font-size-mobile * 0.7);
-$headline-font-size-desktop: calc($headline-font-size-mobile * 1.5);
+$headline-font-size-mobile: $base-font-size-mobile;
+$headline-font-size-desktop: $headline-font-size-mobile;
 
 h1 {
-  font-size: $headline-font-size-mobile * 5;
-}
-
-h2:not(.post-title) {
-  font-size: $headline-font-size-mobile * 3.5;
-}
-
-h3 {
   font-size: $headline-font-size-mobile * 2.5;
 }
 
+h2:not(.post-title) {
+  font-size: $headline-font-size-mobile * 2;
+}
+
+h3 {
+  font-size: $headline-font-size-mobile * 1.7;
+}
+
 h4:not(.post-title) {
-  font-size: $headline-font-size-mobile 1.5;
+  font-size: $headline-font-size-mobile 1.25;
 }
 
 h5 {
-  font-size: $headline-font-size-mobile * 1.2;
+  font-size: $headline-font-size-mobile * 1;
 }
 
 
@@ -35,15 +35,15 @@ h5 {
 @media screen and (min-width: $sm) {
 
   h1 {
-    font-size: $headline-font-size-desktop * 5;
+    font-size: $headline-font-size-desktop * 2.5;
   }
 
   h2:not(.post-title) {
-    font-size: $base-font-size-desktop * 3.5;
+    font-size: $base-font-size-desktop * 2;
   }
 
   h3 {
-    font-size: $base-font-size-desktop * 2.5;
+    font-size: $base-font-size-desktop * 1.75;
   }
 
   h4:not(.post-title) {
@@ -51,7 +51,7 @@ h5 {
   }
 
   h5 {
-    font-size: $base-font-size-desktop * 1.2;
+    font-size: $base-font-size-desktop * 1.25;
   }
 
 }

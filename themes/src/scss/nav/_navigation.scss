@@ -8,6 +8,7 @@ $navMargin: ( calc($nav-height-mobile / 2) - 2px);
 }
 
 @import "navbar";
+@import "navbar-recolor";
 @import "menu-button";
 @import "menu-toggle";
 @import "trigger-menu";

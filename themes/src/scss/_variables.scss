@@ -3,7 +3,7 @@ $base-font-family: 'Catamaran', sans-serif;
 $base-font-size-desktop: 18px;
 $base-font-size-mobile: $base-font-size-desktop * 1.05;
 $base-line-height: 1.45;
-$base-font-weight: 200;
+$base-font-weight: 400;
 
 $primary: var(--wp--preset--color--primary);
 $secondary: var(--wp--preset--color--secondary);
@@ -19,14 +19,14 @@ $base-border-color: var(--wp--preset--color--border);
 
 // N A V *********************
 $nav-height-mobile: 60px;
-$nav-height-desktop: 80px;
+$nav-height-desktop: 100px;
 
-$nav-font-family: 'Catamaran', sans-serif;
+$nav-font-family: 'Poppins', sans-serif;
 
-$nav-mobile-font-weight: 600;
-$nav-desktop-font-weight: 200;
-$nav-mobile-active-font-weight: 600;
-$nav-desktop-active-font-weight: 600;
+$nav-mobile-font-weight: 700;
+$nav-desktop-font-weight: 400;
+$nav-mobile-active-font-weight: 700;
+$nav-desktop-active-font-weight: 700;
 
 $mobile-nav-font-size: 18px;
 $desktop-nav-font-size: 19px;
@@ -60,15 +60,15 @@ $post-meta-font-size: 0.9rem;
 $post-item-max-width: 350px;
 
 
-$headline-font-family: 'Catamaran', serif;
-$headline-font-weight: 400;
+$headline-font-family: 'Poppins', serif;
+$headline-font-weight: 700;
 $headline-color: $base-color;
 
 $widgets-bg-color: $lighted;
 $widgets-color: $base-color;
 
-$footer-font-family: 'Catamaran', sans-serif;
-$footer-font-weight: 200;
+$footer-font-family: 'Poppins', sans-serif;
+$footer-font-weight: 400;
 $footer-bg-color: $base-color;
 $footer-color: $base-color;
 $footer-nav-color: $base-color;
