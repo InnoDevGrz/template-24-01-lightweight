@@ -1,0 +1,31 @@
+.bg-img-footer {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  &:before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $bg-img-overlay-color;
+    opacity: $bg-img-overlay-opacity ;
+    z-index: 2;
+  }
+
+  *:not(.follow .links i) {
+    color: $bg-img-footer-color !important;
+  }
+
+
+  .wrapper{
+    border-top:none !important;
+    border-bottom: none !important;
+    position: relative;
+    z-index: 3;
+  }
+
+}

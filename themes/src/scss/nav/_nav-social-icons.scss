@@ -1,0 +1,46 @@
+#primary-nav {
+  .follow {
+    margin-top: 20px;
+    line-height: 58px;
+    height: 58px;
+    text-align: center;
+    @media screen and (min-width: $breakpoint-nav) {
+      text-align: left;
+    }
+    .links {
+
+      a {
+        display: inline-block;
+        line-height: 58px;
+        height: 75px;
+        width: 25px;
+        margin-right: 20px;
+
+        text-align: center;
+        transition: 0.7s ease-in-out all;
+        color: $menu-social-icon-color;
+
+@media screen and (min-width: $breakpoint-nav ){
+  line-height: 58px;
+  height: 58px;
+  width: 12px;
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+        &:hover {
+          opacity: 0.7;
+          color: $menu-social-icon-color-hover;
+        }
+
+        i {
+          font-size: 25px;
+          @media screen and (min-width: $breakpoint-nav) {
+            font-size: 15px;
+          }
+        }
+
+      }
+    }
+  }
+}
