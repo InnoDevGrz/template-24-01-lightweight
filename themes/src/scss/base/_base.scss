@@ -19,46 +19,15 @@ html {
 
 body {
   margin: 0;
-  font-family: $primary-font-family;
   background-color: $base-bg-color;
-  color: $base-color;
-  font-weight: $base-font-weight;
   padding-top: $nav-height-mobile;
   overflow-x: hidden;
   position: relative;
   @media (min-width: $breakpoint-nav) {
     padding-top: $nav-height-desktop;
   }
-
-
-}
-
-#content {
-  //overflow: hidden;
-  @media (min-width: $lg) {
-
-  }
 }
 
 
-.mobile-off {
-  display: none;
-  @media only screen and (min-width: $sm) {
-    display: block;
-  }
-}
-.tablet-off {
-  display: none;
 
-  @media only screen and (min-width: $md) {
-    display: block;
-  }
-}
-
-.desktop-off {
-  display: block;
-  @media only screen and (min-width: $breakpoint-nav) {
-    display: none;
-  }
-}
 

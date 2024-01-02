@@ -10,13 +10,12 @@ Requires PHP: > 8.0
 Text-Domain: ize
  */
 
-
 @import "variables";
-
+@import "typography/fonts";
 @import "base/base";
 @import "typography/base-typography";
 @import "typography/colors";
-@import "typography/fonts";
+
 @import "typography/flaticon";
 @import "typography/headlines";
 // @import "typography/icons";

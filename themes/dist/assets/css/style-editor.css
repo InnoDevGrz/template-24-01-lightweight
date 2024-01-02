@@ -11,29 +11,13 @@ $info: #33b5e5;
 */
 /* *** MEDIA QUERIES *** */
 body {
-  margin: 0;
   font-family: var(--wp--preset--font-family--primary);
-  background-color: var(--wp--preset--color--base-bg);
-  color: var(--wp--preset--color--base);
   font-weight: 400;
+  color: var(--wp--preset--color--base);
 }
 
 b, strong {
   font-weight: 700;
-}
-
-.is-style-base {
-  text-transform: none !important;
-  font-weight: 400 !important;
-  color: var(--wp--preset--color--base);
-  font-family: var(--wp--preset--font-family--primary) !important;
-  font-size: 18.9px;
-  letter-spacing: unset;
-}
-@media only screen and (min-width: 768px) {
-  .is-style-base {
-    font-size: 18px;
-  }
 }
 
 @font-face {
@@ -82,40 +66,40 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 47.25px;
+  font-size: 44.625px;
 }
 
 h2:not(.post-title) {
-  font-size: 37.8px;
+  font-size: 35.7px;
 }
 
 h3 {
-  font-size: 32.13px;
+  font-size: 30.345px;
 }
 
 h4:not(.post-title) {
-  font-size: 18.9px 1.25;
+  font-size: 17.85px 1.25;
 }
 
 h5 {
-  font-size: 18.9px;
+  font-size: 17.85px;
 }
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 47.25px;
+    font-size: 44.625px;
   }
   h2:not(.post-title) {
-    font-size: 36px;
+    font-size: 34px;
   }
   h3 {
-    font-size: 31.5px;
+    font-size: 29.75px;
   }
   h4:not(.post-title) {
-    font-size: 18px 1.5;
+    font-size: 17px 1.5;
   }
   h5 {
-    font-size: 22.5px;
+    font-size: 21.25px;
   }
 }
 @font-face {

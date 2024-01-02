@@ -21,108 +21,6 @@ $success: #00c851;
 $info: #33b5e5;
 */
 /* *** MEDIA QUERIES *** */
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  line-height: 1.45;
-  scroll-behavior: smooth;
-  font-size: 18px;
-  overflow-x: hidden;
-}
-@media only screen and (max-width: 767px) {
-  html {
-    font-size: 18.9px;
-  }
-}
-
-body {
-  margin: 0;
-  font-family: var(--wp--preset--font-family--primary);
-  background-color: var(--wp--preset--color--base-bg);
-  color: var(--wp--preset--color--base);
-  font-weight: 400;
-  padding-top: 60px;
-  overflow-x: hidden;
-  position: relative;
-}
-@media (min-width: 1200px) {
-  body {
-    padding-top: 100px;
-  }
-}
-
-.mobile-off {
-  display: none;
-}
-@media only screen and (min-width: 768px) {
-  .mobile-off {
-    display: block;
-  }
-}
-
-.tablet-off {
-  display: none;
-}
-@media only screen and (min-width: 992px) {
-  .tablet-off {
-    display: block;
-  }
-}
-
-.desktop-off {
-  display: block;
-}
-@media only screen and (min-width: 1200px) {
-  .desktop-off {
-    display: none;
-  }
-}
-
-body {
-  margin: 0;
-  font-family: var(--wp--preset--font-family--primary);
-  background-color: var(--wp--preset--color--base-bg);
-  color: var(--wp--preset--color--base);
-  font-weight: 400;
-}
-
-b, strong {
-  font-weight: 700;
-}
-
-.is-style-base {
-  text-transform: none !important;
-  font-weight: 400 !important;
-  color: var(--wp--preset--color--base);
-  font-family: var(--wp--preset--font-family--primary) !important;
-  font-size: 18.9px;
-  letter-spacing: unset;
-}
-@media only screen and (min-width: 768px) {
-  .is-style-base {
-    font-size: 18px;
-  }
-}
-
-.primary {
-  color: var(--wp--preset--color--primary);
-}
-
-.secondary {
-  color: var(--wp--preset--color--secondary);
-}
-
-.base {
-  color: var(--wp--preset--color--base);
-}
-
 @font-face {
   font-family: "Poppins";
   src: url("assets/fonts/poppins/poppins-v20-latin-regular.woff2") format("woff2");
@@ -158,6 +56,62 @@ b, strong {
   font-style: normal;
   font-display: swap;
 }
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  font-size: 17px;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 17.85px;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--wp--preset--color--base-bg);
+  padding-top: 60px;
+  overflow-x: hidden;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  body {
+    padding-top: 100px;
+  }
+}
+
+body {
+  font-family: var(--wp--preset--font-family--primary);
+  font-weight: 400;
+  color: var(--wp--preset--color--base);
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+.primary {
+  color: var(--wp--preset--color--primary);
+}
+
+.secondary {
+  color: var(--wp--preset--color--secondary);
+}
+
+.base {
+  color: var(--wp--preset--color--base);
+}
+
 @font-face {
   font-family: "flaticon_starter_theme";
   src: url("assets/fonts/flaticon/flaticon_starter_theme.ttf") format("truetype"), url("assets/fonts/flaticon/flaticon_starter_theme.woff") format("woff"), url("assets/fonts/flaticon/flaticon_starter_theme.woff2") format("woff2"), url("assets/fonts/flaticon/flaticon_starter_theme.eot") format("embedded-opentype"), url("assets/fonts/flaticon/flaticon_starter_theme.svg") format("svg");
@@ -243,40 +197,40 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 47.25px;
+  font-size: 44.625px;
 }
 
 h2:not(.post-title) {
-  font-size: 37.8px;
+  font-size: 35.7px;
 }
 
 h3 {
-  font-size: 32.13px;
+  font-size: 30.345px;
 }
 
 h4:not(.post-title) {
-  font-size: 18.9px 1.25;
+  font-size: 17.85px 1.25;
 }
 
 h5 {
-  font-size: 18.9px;
+  font-size: 17.85px;
 }
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 47.25px;
+    font-size: 44.625px;
   }
   h2:not(.post-title) {
-    font-size: 36px;
+    font-size: 34px;
   }
   h3 {
-    font-size: 31.5px;
+    font-size: 29.75px;
   }
   h4:not(.post-title) {
-    font-size: 18px 1.5;
+    font-size: 17px 1.5;
   }
   h5 {
-    font-size: 22.5px;
+    font-size: 21.25px;
   }
 }
 a {
@@ -1120,38 +1074,6 @@ ul.is-style-check li:before {
   }
 }
 
-@media (min-width: 768px) {
-  .container-small {
-    padding-right: 10%;
-    padding-left: 10%;
-  }
-}
-
-@media (min-width: 768px) {
-  .container-min {
-    padding-right: 15%;
-    padding-left: 15%;
-  }
-}
-
-@media (min-width: 768px) {
-  .container-small {
-    padding-right: 20%;
-    padding-left: 20%;
-  }
-}
-
-.container-large {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-@media (min-width: 768px) {
-  .container-large {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-}
-
 .alignfull {
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
@@ -1201,15 +1123,6 @@ ul.is-style-check li:before {
   margin-top: 3rem;
 }
 
-.spacer-bottom {
-  padding-bottom: 3rem;
-}
-@media only screen and (min-width: 992px) {
-  .spacer-bottom {
-    padding-bottom: 6rem;
-  }
-}
-
 section,
 .is-style-section {
   margin-top: 1rem;
@@ -1230,41 +1143,8 @@ section,
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .teaser-min-height {
-    min-height: 150px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .teaser-min-height {
-    min-height: 110px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .teaser-min-height {
-    min-height: 80px;
-  }
-}
-
-.m-t-n-05 {
-  margin-top: -0.5em;
-}
-
-.m-t-0 {
-  margin-top: 0 !important;
-}
-
 .tsc-icon {
   width: 100px;
-}
-
-.p-2 {
-  padding: 1em;
-}
-@media screen and (min-width: 420px) {
-  .p-2 {
-    padding: 2em;
-  }
 }
 
 /*
@@ -1680,8 +1560,8 @@ input[type=file]:focus {
   right: 0;
   bottom: 0;
   width: 100%;
-  background-color: var(--wp--preset--color--primary);
-  opacity: 0.7;
+  background-color: var(--wp--preset--color--darken);
+  opacity: 0.8;
   z-index: 2;
 }
 .bg-img-footer *:not(.follow .links i) {
@@ -1752,18 +1632,6 @@ figure {
   margin: 0;
 }
 
-.aspect-ratio-16-10 {
-  aspect-ratio: 16/10;
-}
-
-.aspect-ratio-4-3 {
-  aspect-ratio: 4/3;
-}
-
-.aspect-ratio-3-2 {
-  aspect-ratio: 3/2;
-}
-
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -1823,8 +1691,8 @@ figure {
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 9px;
-  transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 .scroll-top.visible {
   opacity: 0.7;
