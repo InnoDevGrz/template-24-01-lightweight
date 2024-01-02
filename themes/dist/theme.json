@@ -55,10 +55,11 @@
 
     "custom": {},
     "layout": {
-      "contentSize": "1200",
-      "wideSize": "1400px"
+      "contentSize": "1000px",
+      "wideSize": "1200px"
     },
     "spacing": {
+      "blockGap": true,
       "margin": true,
       "padding": true,
       "units": [
@@ -66,8 +67,10 @@
       ]
     },
     "typography": {
-        "fontWeight": false,
-
+      "fontWeight": false,
+      "textDecoration": false,
+      "fluid": false,
+      "letterSpacing": true,
       "fontFamilies": [
         {
           "name": "Primary",

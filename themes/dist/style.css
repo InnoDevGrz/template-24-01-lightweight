@@ -1125,21 +1125,33 @@ ul.is-style-check li:before {
 
 section,
 .is-style-section {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 @media only screen and (min-width: 768px) {
   section,
   .is-style-section {
-    padding-top: 5rem;
-    padding-bottom: 1.5rem;
-    min-height: 375px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
   section,
   .is-style-section {
-    padding-bottom: 3rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding: 4rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  section,
+  .is-style-section {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding: 5rem;
   }
 }
 
