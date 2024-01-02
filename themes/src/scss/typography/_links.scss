@@ -1,11 +1,11 @@
 
 a {
-  color: $third;
-  transition: color 250ms linear;
+  color: $secondary;
+  transition: all 250ms linear;
   text-decoration: none;
 
   &:hover {
-    color: $base-color;
+    opacity: 0.7;
   }
 
   &:active {

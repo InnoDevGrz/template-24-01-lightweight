@@ -3,19 +3,39 @@ wp.domReady(() => {
     wp.blocks.unregisterBlockStyle('core/image', 'default');
     wp.blocks.unregisterBlockStyle('core/image', 'rounded');
     wp.blocks.unregisterBlockStyle('core/buttons', 'default');
-   // wp.blocks.unregisterBlockStyle('core/buttons', 'outline');
-    // wp.blocks.unregisterBlockStyle('core/buttons', 'squared');
+    wp.blocks.unregisterBlockStyle('core/buttons', 'outline');
+    wp.blocks.unregisterBlockStyle('core/buttons', 'squared');
     wp.blocks.unregisterBlockStyle('core/buttons', 'fill');
 
 
-    wp.blocks.registerBlockStyle('core/button', {
-        name: 'btn-primary',
-        label: 'Primary',
+
+
+
+    /*** LAYOUTS ***/
+    wp.blocks.registerBlockStyle('core/group', {
+        name: 'image-shadow',
+        label: 'Image Shadow',
     });
 
-    wp.blocks.registerBlockStyle('core/button', {
-        name: 'btn-secondary',
-        label: 'Secondary',
+    wp.blocks.registerBlockStyle('core/group', {
+        name: 'section',
+        label: 'Section',
+    });
+
+    wp.blocks.registerBlockStyle('core/columns', {
+        name: 'section',
+        label: 'Section',
+    });
+
+
+    /*** Lists **/
+    wp.blocks.registerBlockStyle('core/list', {
+        name: 'highlights',
+        label: 'Highlights',
+    });
+    wp.blocks.registerBlockStyle('core/list', {
+        name: 'check',
+        label: 'Check',
     });
 
     wp.blocks.registerBlockStyle('core/columns', {
@@ -29,41 +49,21 @@ wp.domReady(() => {
     });
 
 
-
-
-    wp.blocks.registerBlockStyle('core/group', {
-        name: 'image-shadow',
-        label: 'Image Shadow',
+    /*** Buttons ***/
+    wp.blocks.registerBlockStyle('core/button', {
+        name: 'btn-primary',
+        label: 'Primary',
     });
 
-    wp.blocks.registerBlockStyle('core/group', {
-        name: 'section',
-        label: 'Section',
+    wp.blocks.registerBlockStyle('core/button', {
+        name: 'btn-secondary',
+        label: 'Secondary',
     });
 
 
 
-    /** lists **/
-    wp.blocks.registerBlockStyle('core/list', {
-        name: 'highlights',
-        label: 'Highlights',
-    });
 
-    wp.blocks.registerBlockStyle('core/list', {
-        name: 'triangle-primary',
-        label: 'Triangle Primary',
-       // isDefault: true
-    });
 
-    wp.blocks.registerBlockStyle('core/list', {
-        name: 'triangle-secondary',
-        label: 'Triangle Secondary',
-    });
-
-    wp.blocks.registerBlockStyle('core/columns', {
-        name: 'section',
-        label: 'Section',
-    });
 
 
 

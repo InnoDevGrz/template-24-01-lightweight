@@ -1,6 +1,10 @@
 {
-  "version": 1,
+  "$schema": "http://schemas.wp.org/trunk/theme.json",
+  "version": 2,
   "settings": {
+
+
+
     "color": {
       "palette": [
         {
@@ -50,19 +54,42 @@
       "duotone": [],
       "gradients": []
     },
+
     "custom": {},
     "layout": {
       "contentSize": "1000px",
       "wideSize": "1200px"
     },
     "spacing": {
-      "margin": false,
-      "padding": false,
+      "margin": true,
+      "padding": true,
       "units": [
-        "em"
+        "rem"
       ]
     },
     "typography": {
+        "fontWeight": false,
+
+      "fontFamilies": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "fontFamily": "Poppins, sans-serif"
+        },
+        {
+          "name": "Secondary",
+          "slug": "secondary",
+          "fontFamily": "EB Garamond, sans-serif"
+        }
+      ],
+
+
+
+
+
+
+
+
       "customFontSize": false,
       "lineHeight": true,
       "dropCap": false,

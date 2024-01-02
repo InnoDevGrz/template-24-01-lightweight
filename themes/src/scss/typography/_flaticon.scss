@@ -1,75 +1,104 @@
-$flaticon-font: "flaticon";
+$flaticon-font: "flaticon_starter_theme";
 
 @font-face {
-    font-family: $flaticon-font;
-    src:
-            url('#{$font-path}/flaticon/#{$flaticon-font}.ttf') format('truetype'),
-            url('#{$font-path}/flaticon/#{$flaticon-font}.woff') format('woff'),
-            url('#{$font-path}/flaticon/#{$flaticon-font}.woff2') format('woff2'),
-            url('#{$font-path}/flaticon/#{$flaticon-font}.eot') format('embedded-opentype'),
-            url('#{$font-path}/flaticon/#{$flaticon-font}.svg') format('svg');
+  font-family: $flaticon-font;
+  src:
+          url('#{$font-path}/flaticon/#{$flaticon-font}.ttf') format('truetype'),
+          url('#{$font-path}/flaticon/#{$flaticon-font}.woff') format('woff'),
+          url('#{$font-path}/flaticon/#{$flaticon-font}.woff2') format('woff2'),
+          url('#{$font-path}/flaticon/#{$flaticon-font}.eot') format('embedded-opentype'),
+          url('#{$font-path}/flaticon/#{$flaticon-font}.svg') format('svg');
+}
+
+@mixin flaticon{
+  //font-family: $flaticon-font !important;
+  font-family: '#{$flaticon-font}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
-i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
-    font-family: $flaticon-font !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before,
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"], [class*=" flaticon-"]
+{
+  //font-family: $flaticon-font !important;
+  font-family: '#{$flaticon-font}' !important;
+
+  speak: never;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
-[class^="flaticon-"]:before, [class*=" flaticon-"]:before {
-    font-family: $flaticon-font !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-[class^="flaticon-"], [class*=" flaticon-"] {
-    font-family: $flaticon-font !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-
-$flaticon-map: (
-        "instagram": "\f101",
-        "facebook-app-symbol": "\f102",
-        "youtube": "\f103",
-        "linkedin": "\f104",
-        "telephone-call": "\f105",
-        "email": "\f106",
+$flaticon_starter_theme-map: (
+        "facebook-app-symbol": "\f101",
+        "instagram": "\f102",
+        "linkedin": "\f103",
+        "mail": "\f104",
+        "telephone": "\f105",
+        "check": "\f106",
+        "right-arrow": "\f107",
+        "left-arrow": "\f108",
+        "arrow-down-sign-to-navigate": "\f109",
+        "up-arrow": "\f10a",
+        "youtube": "\f10b",
+        "maps-and-flags": "\f10c",
+        "whatsapp": "\f10d",
+        "signal": "\f10e",
 );
 
-.flaticon-instagram:before {
-  content: map-get($flaticon-map, "instagram");
-}
 .flaticon-facebook-app-symbol:before {
-  content: map-get($flaticon-map, "facebook-app-symbol");
+  content: map-get($flaticon_starter_theme-map, "facebook-app-symbol");
 }
-.flaticon-youtube:before {
-  content: map-get($flaticon-map, "youtube");
+.flaticon-instagram:before {
+  content: map-get($flaticon_starter_theme-map, "instagram");
 }
 .flaticon-linkedin:before {
-  content: map-get($flaticon-map, "linkedin");
+  content: map-get($flaticon_starter_theme-map, "linkedin");
 }
-.flaticon-telephone-call:before {
-  content: map-get($flaticon-map, "telephone-call");
+.flaticon-mail:before {
+  content: map-get($flaticon_starter_theme-map, "mail");
 }
-.flaticon-email:before {
-  content: map-get($flaticon-map, "email");
+.flaticon-telephone:before {
+  content: map-get($flaticon_starter_theme-map, "telephone");
+}
+.flaticon-check:before {
+  content: map-get($flaticon_starter_theme-map, "check");
+}
+.flaticon-right-arrow:before {
+  content: map-get($flaticon_starter_theme-map, "right-arrow");
+}
+.flaticon-left-arrow:before {
+  content: map-get($flaticon_starter_theme-map, "left-arrow");
+}
+.flaticon-arrow-down-sign-to-navigate:before {
+  content: map-get($flaticon_starter_theme-map, "arrow-down-sign-to-navigate");
+}
+.flaticon-up-arrow:before {
+  content: map-get($flaticon_starter_theme-map, "up-arrow");
+}
+.flaticon-youtube:before {
+  content: map-get($flaticon_starter_theme-map, "youtube");
+}
+.flaticon-maps-and-flags:before {
+  content: map-get($flaticon_starter_theme-map, "maps-and-flags");
+}
+.flaticon-whatsapp:before {
+  content: map-get($flaticon_starter_theme-map, "whatsapp");
+}
+.flaticon-signal:before {
+  content: map-get($flaticon_starter_theme-map, "signal");
 }

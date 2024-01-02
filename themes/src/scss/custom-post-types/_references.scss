@@ -1,7 +1,6 @@
 /* Grids & Teaser Items */
 
-.reference-grid,
-.offers-grid {
+.reference-grid{
   display: grid;
   grid-gap: .5em 1em;
   grid-template-columns: 1fr;
@@ -14,8 +13,7 @@
 
 }
 
-.blog-reference-grid,
-.blog-offers-grid {
+.blog-reference-grid{
   display: grid;
   grid-gap: 2em;
   grid-template-columns: 1fr;
@@ -30,11 +28,6 @@
   }
 
 }
-
-.blog-offers-grid {
-  grid-gap: 2em !important;
-}
-
 
 .reference-item {
   max-width: 700px;
@@ -97,80 +90,11 @@
 
 }
 
-.offer-item {
-  position: relative;
-  overflow: hidden;
-
-  img {
-    transition: all 0.3s ease-in-out;
-  }
-
-  &:hover img {
-    transform: scale(1.02);
-  }
-
-  .offer-link {
-    display: block;
-  }
-
-
-  .date-validity {
-    position: absolute;
-    padding: .3em;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #fff;
-    top: .3em;
-    right: .3em;
-    z-index: 1;
-    @media only screen and (min-width: $xxs) {
-      top: 1em;
-      right: 1em;
-      padding: 1em;
-    }
-  }
-
-
-  .post-content {
-    position: absolute;
-
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: .5em;
-    @media only screen and (min-width: $xxs) {
-      padding: 1.5em;
-    }
-
-
-    > * {
-      color: #fff;
-      font-weight: bold;
-      @media only screen and (max-width: $xxs - 1px) {
-        font-size: 0.8rem;
-      }
-    }
-
-    .teaser-text {
-      display: none;
-      @media only screen and (min-width: $xxs) {
-        display: block;
-      }
-    }
-
-
-  }
-
-}
-
 /* Single pages */
 
-.single-references,
-.single-offers {
+.single-references {
 
-  .reference-thumbnail,
-  .offer-thumbnail {
+  .reference-thumbnail{
     margin-top: 0 !important;
     max-height: 75vh;
     overflow: hidden;
@@ -191,8 +115,7 @@
     }
   }
 
-  .reference-infos,
-  .offer-infos {
+  .reference-infos {
     margin-top: 2em;
     display: grid;
     grid-template-columns: 1fr;
@@ -205,53 +128,3 @@
 
 
 }
-
-
-/* events  */
-
-.events {
-  .block-events {
-    overflow: visible;
-
-    .event-image {
-    }
-
-    .splide__track {
-      overflow: visible;
-      margin-bottom: 3em !important;
-    }
-
-    .splide__arrow {
-      svg {
-        fill: #fff !important;
-        width: 3em !important;
-        height: 3em !important;
-      }
-
-    }
-
-    .splide__pagination {
-      bottom: -45px;
-    }
-
-    @media screen and (min-width: $sm) {
-      .event-description {
-        position: absolute;
-        padding: 2em 2em 4em 2em;
-        width: 75%;
-        bottom: -75px;
-        left: 12.5%;
-        box-shadow: 2px 3px 20px 10px rgba(0, 0, 0, 0.2);
-        background-color: #fff;
-        margin: 0 auto;
-
-      }
-    }
-
-
-  }
-}
-
-
-
-

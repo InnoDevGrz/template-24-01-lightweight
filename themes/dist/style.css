@@ -9,12 +9,18 @@ Requires at least: 6.0
 Requires PHP: > 8.0
 Text-Domain: ize
  */
+/* *** HEADLINES *** */
+/* *** WIDGETS *** */
+/* *** FOOTER *** */
+/* *** LISTS *** */
+/* *** POSTS *** */
 /*
 $danger: #ff4444;
 $warning: #ffbb33;
 $success: #00c851;
 $info: #33b5e5;
 */
+/* *** MEDIA QUERIES *** */
 *,
 *:before,
 *:after {
@@ -38,7 +44,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Catamaran", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   background-color: var(--wp--preset--color--base-bg);
   color: var(--wp--preset--color--base);
   font-weight: 400;
@@ -81,7 +87,7 @@ body {
 
 body {
   margin: 0;
-  font-family: "Catamaran", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   background-color: var(--wp--preset--color--base-bg);
   color: var(--wp--preset--color--base);
   font-weight: 400;
@@ -95,7 +101,7 @@ b, strong {
   text-transform: none !important;
   font-weight: 400 !important;
   color: var(--wp--preset--color--base);
-  font-family: "Catamaran", sans-serif !important;
+  font-family: var(--wp--preset--font-family--primary) !important;
   font-size: 18.9px;
   letter-spacing: unset;
 }
@@ -139,33 +145,28 @@ b, strong {
   font-display: swap;
 }
 @font-face {
-  font-family: "flaticon";
-  src: url("assets/fonts/flaticon/flaticon.ttf") format("truetype"), url("assets/fonts/flaticon/flaticon.woff") format("woff"), url("assets/fonts/flaticon/flaticon.woff2") format("woff2"), url("assets/fonts/flaticon/flaticon.eot") format("embedded-opentype"), url("assets/fonts/flaticon/flaticon.svg") format("svg");
-}
-i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
-  font-family: "flaticon" !important;
+  font-family: "EB Garamond";
+  src: url("assets/fonts/eb-garamond/eb-garamond-v27-latin-regular.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
-  font-weight: normal !important;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-display: swap;
 }
-
-[class^=flaticon-]:before, [class*=" flaticon-"]:before {
-  font-family: "flaticon" !important;
+@font-face {
+  font-family: "EB Garamond";
+  src: url("assets/fonts/eb-garamond/eb-garamond-v27-latin-700.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
-  font-weight: normal !important;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-display: swap;
 }
-
+@font-face {
+  font-family: "flaticon_starter_theme";
+  src: url("assets/fonts/flaticon/flaticon_starter_theme.ttf") format("truetype"), url("assets/fonts/flaticon/flaticon_starter_theme.woff") format("woff"), url("assets/fonts/flaticon/flaticon_starter_theme.woff2") format("woff2"), url("assets/fonts/flaticon/flaticon_starter_theme.eot") format("embedded-opentype"), url("assets/fonts/flaticon/flaticon_starter_theme.svg") format("svg");
+}
+i[class^=flaticon-]:before, i[class*=" flaticon-"]:before,
+[class^=flaticon-]:before, [class*=" flaticon-"]:before,
 [class^=flaticon-], [class*=" flaticon-"] {
-  font-family: "flaticon" !important;
+  font-family: "flaticon_starter_theme" !important;
+  speak: never;
   font-style: normal;
   font-weight: normal !important;
   font-variant: normal;
@@ -173,34 +174,66 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.flaticon-instagram:before {
-  content: "\f101";
 }
 
 .flaticon-facebook-app-symbol:before {
+  content: "\f101";
+}
+
+.flaticon-instagram:before {
   content: "\f102";
 }
 
-.flaticon-youtube:before {
+.flaticon-linkedin:before {
   content: "\f103";
 }
 
-.flaticon-linkedin:before {
+.flaticon-mail:before {
   content: "\f104";
 }
 
-.flaticon-telephone-call:before {
+.flaticon-telephone:before {
   content: "\f105";
 }
 
-.flaticon-email:before {
+.flaticon-check:before {
   content: "\f106";
 }
 
+.flaticon-right-arrow:before {
+  content: "\f107";
+}
+
+.flaticon-left-arrow:before {
+  content: "\f108";
+}
+
+.flaticon-arrow-down-sign-to-navigate:before {
+  content: "\f109";
+}
+
+.flaticon-up-arrow:before {
+  content: "\f10a";
+}
+
+.flaticon-youtube:before {
+  content: "\f10b";
+}
+
+.flaticon-maps-and-flags:before {
+  content: "\f10c";
+}
+
+.flaticon-whatsapp:before {
+  content: "\f10d";
+}
+
+.flaticon-signal:before {
+  content: "\f10e";
+}
+
 h1, h2, h3, h4, h5 {
-  font-family: "Poppins", serif;
+  font-family: var(--wp--preset--font-family--secondary);
   font-weight: 700;
   color: var(--wp--preset--color--base);
   line-height: 1.1;
@@ -246,114 +279,14 @@ h5 {
     font-size: 22.5px;
   }
 }
-@font-face {
-  font-family: "icons";
-  src: url("assets/fonts/icons/icons.ttf") format("truetype"), url("assets/fonts/icons/icons.woff") format("woff"), url("assets/fonts/icons/icons.svg#icons") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-ul.is-style-highlights li:before, [class^=icon-], [class*=" icon-"] {
-  font-family: "icons" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-download:before {
-  content: "\e911";
-}
-
-.icon-arrow_left:before {
-  content: "\e90b";
-}
-
-.icon-arrow_right:before {
-  content: "\e90c";
-}
-
-.icon-arrow_back:before {
-  content: "\e90d";
-}
-
-.icon-arrow_forward:before {
-  content: "\e90e";
-}
-
-.icon-cert_left:before {
-  content: "\e90f";
-}
-
-.icon-cert_right:before {
-  content: "\e910";
-}
-
-.icon-facebook:before {
-  content: "\e907";
-}
-
-.icon-instagram:before {
-  content: "\e908";
-}
-
-.icon-linkedin:before {
-  content: "\e90a";
-}
-
-.icon-youtube:before {
-  content: "\e909";
-}
-
-.icon-linkedin_full:before {
-  content: "\e900";
-  color: #0a66c2;
-}
-
-.icon-pdf:before {
-  content: "\e901";
-}
-
-.icon-social:before {
-  content: "\e902";
-}
-
-.icon-technic:before {
-  content: "\e903";
-}
-
-.icon-quality:before {
-  content: "\e904";
-}
-
-.icon-figure:before {
-  content: "\e905";
-}
-
-.icon-map:before {
-  content: "\e906";
-}
-
-.icon-webdevelopment:before {
-  content: "\e912";
-}
-
-.icon-newsletter:before {
-  content: "\e913";
-}
-
 a {
-  color: var(--wp--preset--color--third);
-  -webkit-transition: color 250ms linear;
-  transition: color 250ms linear;
+  color: var(--wp--preset--color--secondary);
+  -webkit-transition: all 250ms linear;
+  transition: all 250ms linear;
   text-decoration: none;
 }
 a:hover {
-  color: var(--wp--preset--color--base);
+  opacity: 0.7;
 }
 a:active {
   background-color: rgba(var(--wp--preset--color--base), 0.3);
@@ -373,50 +306,53 @@ ul.is-style-highlights {
 }
 ul.is-style-highlights li {
   position: relative;
-  padding-left: 1.2em;
+  padding-left: 1.1em;
   margin-bottom: 0.4em;
 }
 ul.is-style-highlights li:before {
-  content: "\e90c";
-  color: var(--wp--preset--color--third);
+  font-family: "flaticon_starter_theme" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f107";
+  color: var(--wp--preset--color--primary);
   position: absolute;
-  top: 0.22em;
+  font-size: 0.6em;
+  top: 0.6em;
   left: 0;
 }
 
-/*** list triangle sign***/
-.is-style-triangle-secondary, .is-style-triangle-primary {
-  padding-top: 1em;
+ul.is-style-check {
   list-style-type: none;
+  padding: 0;
+  padding-top: 1em;
 }
-.is-style-triangle-secondary > li, .is-style-triangle-primary > li {
+ul.is-style-check li {
   position: relative;
-  padding-left: 15px;
-  margin-top: 0.8em;
-  font-family: "Poppins", serif;
-  color: var(--wp--preset--color--base);
+  padding-left: 1.4em;
+  margin-bottom: 0.4em;
 }
-.is-style-triangle-secondary > li:first-child, .is-style-triangle-primary > li:first-child {
-  margin-top: 0;
-}
-.is-style-triangle-secondary > li:before, .is-style-triangle-primary > li:before {
-  content: "";
+ul.is-style-check li:before {
+  font-family: "flaticon_starter_theme" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f106";
+  color: var(--wp--preset--color--primary);
   position: absolute;
-  display: block;
+  font-size: 1.1em;
+  top: 0.2em;
   left: 0;
-  top: 0.28em;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 6px 0 6px 6px;
-}
-
-.is-style-triangle-primary li:before {
-  border-color: transparent transparent transparent var(--wp--preset--color--primary);
-}
-
-.is-style-triangle-secondary li:before {
-  border-color: transparent transparent transparent var(--wp--preset--color--secondary);
 }
 
 .nav-menu,
@@ -427,7 +363,7 @@ ul.is-style-highlights li:before {
 }
 
 #navbar {
-  font-family: "Poppins", sans-serif !important;
+  font-family: var(--wp--preset--font-family--primary) !important;
   font-weight: 700 !important;
   position: fixed;
   top: 0;
@@ -477,25 +413,12 @@ ul.is-style-highlights li:before {
 #navbar .brand a img,
 #navbar .brand a svg {
   width: auto;
-  max-width: none;
   height: 55px;
 }
 @media (min-width: 1200px) {
   #navbar .brand a img,
   #navbar .brand a svg {
     height: 95px !important;
-  }
-}
-#navbar .menu-brand {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  #navbar .menu-brand {
-    display: block;
-  }
-  #navbar .menu-brand img {
-    height: 100px;
-    width: auto;
   }
 }
 
@@ -1037,7 +960,6 @@ ul.is-style-highlights li:before {
   text-align: center;
   -webkit-transition: 0.7s ease-in-out all;
   transition: 0.7s ease-in-out all;
-  color: #000;
 }
 @media screen and (min-width: 1200px) {
   #primary-nav .follow .links a {
@@ -1050,7 +972,6 @@ ul.is-style-highlights li:before {
 }
 #primary-nav .follow .links a:hover {
   opacity: 0.7;
-  color: var(--wp--preset--color--primary);
 }
 #primary-nav .follow .links a i {
   font-size: 25px;
@@ -1365,7 +1286,7 @@ input[type=submit],
   overflow: hidden;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  font-family: "Catamaran", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-weight: 400;
 }
 .btn:hover,
@@ -1402,7 +1323,7 @@ input[type=submit]:active,
   overflow: hidden;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  font-family: "Catamaran", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-weight: 400;
 }
 .is-style-btn-primary .wp-block-button__link:hover,
@@ -1433,7 +1354,7 @@ input[type=submit]:active,
   overflow: hidden;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  font-family: "Catamaran", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-weight: 400;
 }
 .is-style-btn-secondary .wp-block-button__link:hover,
@@ -1463,7 +1384,7 @@ input[type=email],
 input[type=tel],
 input[type=password],
 input[type=search] {
-  font-family: "Catamaran", sans-serif !important;
+  font-family: var(--wp--preset--font-family--primary) !important;
   width: 100%;
   background-color: var(--wp--preset--color--base-bg);
   border: 1px solid var(--wp--preset--color--border);
@@ -1491,7 +1412,7 @@ input[type=search][readonly] {
 }
 
 textarea {
-  font-family: "Catamaran", sans-serif !important;
+  font-family: var(--wp--preset--font-family--primary) !important;
   width: 100%;
   height: 130px;
   background-color: var(--wp--preset--color--base-bg);
@@ -1603,7 +1524,7 @@ input[type=file]:focus {
   padding: 1.5em 0 0;
   background-color: var(--wp--preset--color--base);
   color: var(--wp--preset--color--base);
-  font-family: "Poppins", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-weight: 400;
 }
 #page-footer .wrapper {
@@ -1633,7 +1554,7 @@ input[type=file]:focus {
   }
 }
 #page-footer .wrapper #menu-footer-nav {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   margin-left: 0;
 }
 #page-footer .wrapper #menu-footer-nav li {
@@ -1960,6 +1881,7 @@ figure {
 }
 
 /* posts */
+/* custom-post-types */
 /* acf-blocks */
 .block-header-slider {
   position: relative;
@@ -2066,7 +1988,7 @@ figure {
 }
 .block-header-slider .wrapper .container .inner .title {
   color: #fff;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.5em;
   margin: 0 !important;
   padding: 0 !important;
@@ -2093,6 +2015,7 @@ figure {
   }
 }
 .block-header-slider .wrapper .container .inner .subtitle {
+  font-weight: 400;
   font-size: 18px !important;
   letter-spacing: 1.5px;
   color: #fff;
@@ -2137,7 +2060,7 @@ figure {
   overflow: hidden;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  font-family: "Catamaran", sans-serif;
+  font-family: var(--wp--preset--font-family--primary);
   font-weight: 400;
   -ms-flex-item-align: center;
       align-self: center;
@@ -2157,7 +2080,7 @@ figure {
 }
 
 .image-slider {
-  font-family: "Poppins", serif;
+  font-family: var(--wp--preset--font-family--secondary);
   position: relative;
   overflow: hidden;
 }

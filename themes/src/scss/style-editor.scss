@@ -6,7 +6,8 @@ $font-path: "../fonts";
 @import "typography/base-typography";
 @import "typography/fonts";
 @import "typography/headlines";
-@import "typography/icons";
+@import "typography/flaticon";
+// @import "typography/icons";
 @import "typography/links";
 @import "typography/lists";
 
@@ -20,9 +21,9 @@ $font-path: "../fonts";
 @import "editor/splide";
 
 @import "blocks/header-slider";
-@import "blocks/image-box";
+// @import "blocks/image-box";
 @import "blocks/image-teaser";
-@import "posts/grid";
+// @import "posts/grid";
 
 
 

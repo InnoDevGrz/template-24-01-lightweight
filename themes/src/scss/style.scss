@@ -19,7 +19,7 @@ Text-Domain: ize
 @import "typography/fonts";
 @import "typography/flaticon";
 @import "typography/headlines";
-@import "typography/icons";
+// @import "typography/icons";
 @import "typography/links";
 @import "typography/lists";
 
@@ -38,7 +38,6 @@ Text-Domain: ize
 @import "base/screen-reader";
 @import "base/scroll-top";
 @import "base/sidebar-menu";
-// @import "base/custom-post-types";
 // @import "base/partner-slider";
 
 
@@ -49,6 +48,13 @@ Text-Domain: ize
 // @import "posts/single";
 // @import "posts/grid";
 // @import "posts/navigation";
+
+
+
+/* custom-post-types */
+// @import "custom-post-types/events";
+// @import "custom-post-types/references";
+
 
 /* acf-blocks */
 @import "blocks/header-slider";

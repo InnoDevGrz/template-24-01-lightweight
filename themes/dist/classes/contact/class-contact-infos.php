@@ -77,7 +77,7 @@ class tsc__ContactInfos
     public function get_emailIcon()
     {
         if (!empty($this->email)):
-            $icon = '<i class="tsc-icon flaticon-email" aria-hidden="true"></i>';
+            $icon = '<i class="tsc-icon flaticon-mail" aria-hidden="true"></i>';
             $url = antispambot('mailto:' . $this->email);
             return '<a aria-label="' . __('Send Email', 'ize') . '" href="' . $url . '">' . $icon . '</a>';
         endif;
@@ -86,7 +86,7 @@ class tsc__ContactInfos
     public function get_phoneIcon()
     {
         if (!empty($this->phone)):
-            $icon = '<i class="tsc-icon flaticon-telephone-call" aria-hidden="true"></i>';
+            $icon = '<i class="tsc-icon flaticon-telephone"  aria-hidden="true"></i>';
             $url = 'tel:' . preg_replace("/[^\+\d]+/", "", $this->phone);
             return '<a aria-label="' . esc_attr__('Call now', 'ize') . '" href="' . $url . '">' . $icon . '</a>';
         endif;
@@ -194,7 +194,6 @@ class tsc__ContactInfos
 
     public function get_contactInfoField($before_title, $after_title, $before_text, $after_text)
     {
-
         $view = $this->get_contactInfoTitle($before_title, $after_title);
         $view .= $this->get_contactInfoText($before_text, $after_text);
 
