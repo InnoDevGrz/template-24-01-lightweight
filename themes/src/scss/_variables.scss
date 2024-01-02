@@ -23,15 +23,15 @@ $base-border-color: var(--wp--preset--color--border);
 // N A V *********************
 $nav-font-family: $primary-font-family;
 $nav-height-mobile: 60px;
-$nav-height-desktop: 100px;
+$nav-height-desktop: 80px;
 
 $nav-mobile-font-weight: 700;
 $nav-desktop-font-weight: 400;
 $nav-mobile-active-font-weight: 700;
 $nav-desktop-active-font-weight: 700;
 
-$mobile-nav-font-size: 18px;
-$desktop-nav-font-size: 19px;
+$mobile-nav-font-size: 16px;
+$desktop-nav-font-size: 14px;
 $desktop-subnav-font-size: 16px;
 $nav-font-letter-spacing: 1.2px;
 
@@ -55,7 +55,7 @@ $subnav-desktop-color:      $nav-color;
 /* *** HEADLINES *** */
 $headline-font-family:  var(--wp--preset--font-family--secondary);
 $headline-font-weight:  700;
-$headline-color:        $base-color;
+$headline-color:        $primary;
 
 
 

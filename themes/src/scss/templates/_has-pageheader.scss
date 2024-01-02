@@ -1,0 +1,50 @@
+.page-template-has-pageheader {
+
+
+  #navbar {
+    @media screen and (min-width: $breakpoint-nav) {
+      background-color: transparent;
+      box-shadow: none;
+      transition: all 0.3s ease-in-out;
+      #primary-nav{
+        ul > li:not(.current-menu-item):not(.current-parent-item) a,
+        ul > label{
+          color: #fff;
+        }
+        .follow * {
+          color: #fff;
+        }
+      }
+    }
+
+    &.scroll-up {
+
+      &.recolor {
+        background-color: $nav-bg-color-desktop;
+        box-shadow: 0 4px 13px -6px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease-in-out;
+        #primary-nav{
+          ul > li:not(.current-menu-item):not(.current-parent-item) a,
+          ul > label{
+            color: $nav-color-desktop;
+          }
+          .follow * {
+            color: $nav-color-desktop;
+          }
+
+
+        }
+      }
+
+    }
+
+  }
+
+  .block-header-slider,
+  .page-header {
+    @media screen and (min-width: $breakpoint-nav) {
+      margin-top: - $nav-height-desktop;
+    }
+  }
+
+}

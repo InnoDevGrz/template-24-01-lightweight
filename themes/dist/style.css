@@ -86,7 +86,7 @@ body {
 }
 @media (min-width: 1200px) {
   body {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
 
@@ -189,7 +189,7 @@ i[class^=flaticon-]:before, i[class*=" flaticon-"]:before,
 h1, h2, h3, h4, h5 {
   font-family: var(--wp--preset--font-family--secondary);
   font-weight: 700;
-  color: var(--wp--preset--color--base);
+  color: var(--wp--preset--color--primary);
   line-height: 1.1;
   margin-top: 1em;
   margin-bottom: 0.3em;
@@ -357,7 +357,7 @@ ul.is-style-check li:before {
     position: absolute;
     background-color: #fff;
     font-weight: 400 !important;
-    height: 100px;
+    height: 80px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -377,7 +377,7 @@ ul.is-style-check li:before {
 @media (min-width: 1200px) {
   #navbar .brand a img,
   #navbar .brand a svg {
-    height: 95px !important;
+    height: 75px !important;
   }
 }
 
@@ -627,7 +627,7 @@ ul.is-style-check li:before {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    height: 100px;
+    height: 80px;
     overflow: visible;
     opacity: 1;
     pointer-events: auto;
@@ -761,7 +761,7 @@ ul.is-style-check li:before {
 #primary-nav .nav-menu > li > a {
   height: 50px;
   line-height: 50px;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1.2px;
   color: var(--wp--preset--color--base);
   position: relative;
@@ -802,7 +802,7 @@ ul.is-style-check li:before {
   #primary-nav .nav-menu > li > a {
     height: 58px;
     line-height: 58px;
-    font-size: 19px;
+    font-size: 14px;
   }
 }
 #primary-nav .nav-menu > li > .sub-menu {
@@ -828,7 +828,7 @@ ul.is-style-check li:before {
   }
 }
 #primary-nav .nav-menu > li > .sub-menu li, #primary-nav .nav-menu > li > .sub-menu a {
-  font-size: 16.2px;
+  font-size: 14.4px;
 }
 @media only screen and (min-width: 1200px) {
   #primary-nav .nav-menu > li > .sub-menu li, #primary-nav .nav-menu > li > .sub-menu a {
@@ -1141,6 +1141,10 @@ section,
   .is-style-section {
     padding-bottom: 3rem;
   }
+}
+
+.no-bottom-margin {
+  padding-bottom: 0 !important;
 }
 
 .tsc-icon {
@@ -2064,18 +2068,43 @@ figure {
 }
 
 /* templates */
-.page-template-contact-page main {
-  padding-bottom: 0 !important;
-}
-.page-template-contact-page main .contact span {
+.page-template-contact-page .contact span {
   display: block;
 }
 
-.page-template-page-has-contact-form main {
-  padding-bottom: 0 !important;
+@media screen and (min-width: 1200px) {
+  .page-template-has-pageheader #navbar {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .page-template-has-pageheader #navbar #primary-nav ul > li:not(.current-menu-item):not(.current-parent-item) a,
+  .page-template-has-pageheader #navbar #primary-nav ul > label {
+    color: #fff;
+  }
+  .page-template-has-pageheader #navbar #primary-nav .follow * {
+    color: #fff;
+  }
 }
-
-.page-template-page-has-parallax-end main,
-.page-template-page-kontakt main {
-  padding-bottom: 0 !important;
+.page-template-has-pageheader #navbar.scroll-up.recolor {
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 13px -6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 13px -6px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.page-template-has-pageheader #navbar.scroll-up.recolor #primary-nav ul > li:not(.current-menu-item):not(.current-parent-item) a,
+.page-template-has-pageheader #navbar.scroll-up.recolor #primary-nav ul > label {
+  color: var(--wp--preset--color--base);
+}
+.page-template-has-pageheader #navbar.scroll-up.recolor #primary-nav .follow * {
+  color: var(--wp--preset--color--base);
+}
+@media screen and (min-width: 1200px) {
+  .page-template-has-pageheader .block-header-slider,
+  .page-template-has-pageheader .page-header {
+    margin-top: -80px;
+  }
 }
