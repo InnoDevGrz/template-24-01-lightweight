@@ -20,8 +20,8 @@ ul.is-style-highlights {
       content: $icon-right-arrow;
       color: $list-marker-color;
       position: absolute;
-      font-size: .6em;
-      top: .6em;
+      font-size: .5em;
+      top: .95em;
       left: 0;
     }
   }
@@ -50,4 +50,8 @@ ul.is-style-check {
   }
 }
 
+#page-footer ul.is-style-highlights li:before,
+#page-footer ul.is-style-check li:before{
+  color: #fff ;
+}
 
