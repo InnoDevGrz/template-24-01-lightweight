@@ -1,6 +1,5 @@
 .page-template-has-pageheader {
 
-
   #navbar {
     @media screen and (min-width: $breakpoint-nav) {
       background-color: transparent;
@@ -122,6 +121,7 @@
     background-size: contain;
     aspect-ratio: 16 / 7;
     height: unset;
+
   }
 
 
