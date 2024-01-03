@@ -1,5 +1,13 @@
 
 .has-background {
+  padding: $section-padding-mobile;
+  @media screen and (min-width: $breakpoint-nav) {
+    padding: $section-padding-desktop;
+  }
+  @media screen and (min-width: $fz) {
+    padding: calc($section-padding-desktop * 1.15);
+  }
+
   a:not(.btn):not(.btn-primary):not(.is-style-btn-primary):not(.btn-secondary):not(.is-style-btn-secondary) {
     color: inherit;
 
@@ -14,12 +22,13 @@
 }
 
 .wp-block-columns {
-  gap: 1.5em;
+  gap: $column-gap;
   @media screen and (min-width: $lg) {
-    gap: 2em;
+    gap: calc($column-gap * 2);
   }
+
   &.is-style-reverse {
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse !important;
   }
 
   .wp-block-column {

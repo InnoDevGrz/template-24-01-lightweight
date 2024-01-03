@@ -70,31 +70,24 @@
 
 section,
 .is-style-section {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding-top: 2rem ;
-  padding-bottom: 2rem;
-
-  @media only screen and (min-width: $sm) {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding: 3rem ;
+  padding-top: $section-padding-mobile;
+  padding-bottom: $section-padding-mobile;
+  @media screen and (min-width: $breakpoint-nav) {
+    padding-top: $section-padding-desktop;
+    padding-bottom: $section-padding-desktop;
   }
-  @media only screen and (min-width: $md) {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-    padding: 4rem ;
+  @media screen and (min-width: $fz) {
+    padding-top: calc($section-padding-desktop * 1.15);
+    padding-bottom: calc($section-padding-desktop * 1.15);
   }
-  @media only screen and (min-width: $xxl) {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-    padding: 5rem ;
-  }
-
 }
 
+
+
+
+
 .no-bottom-margin {
-    padding-bottom: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 
