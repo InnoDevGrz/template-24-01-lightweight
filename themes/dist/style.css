@@ -73,7 +73,7 @@ html {
 }
 @media only screen and (max-width: 767px) {
   html {
-    font-size: 17.85px;
+    font-size: 16.15px;
   }
 }
 
@@ -197,28 +197,28 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 44.625px;
+  font-size: 40.375px;
 }
 
 h2:not(.post-title) {
-  font-size: 35.7px;
+  font-size: 32.3px;
 }
 
 h3 {
-  font-size: 30.345px;
+  font-size: 27.455px;
 }
 
 h4:not(.post-title) {
-  font-size: 17.85px 1.25;
+  font-size: 16.15px 1.25;
 }
 
 h5 {
-  font-size: 17.85px;
+  font-size: 16.15px;
 }
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 44.625px;
+    font-size: 40.375px;
   }
   h2:not(.post-title) {
     font-size: 34px;
@@ -966,7 +966,8 @@ ul.is-style-check li:before {
 
 /* A N I M A T I O N S */
 /****************************************************/
-.block-header-slider img {
+.block-header-slider img,
+.pageheader img {
   -webkit-animation: scaleAnimation 11s infinite;
           animation: scaleAnimation 11s infinite;
 }
@@ -1171,42 +1172,7 @@ section,
 .ff-btn,
 input[type=submit],
 .sib-default-btn,
-.wp-block-button .wp-block-button__link {
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 4px;
-  position: relative;
-  padding: 0.8em 1em;
-  line-height: 1;
-  margin: 1em 0 1.1em 0;
-  color: var(--wp--preset--color--secondary);
-  background: #ffffff;
-  border: 1px solid #ebebeb;
-  overflow: hidden;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  font-family: var(--wp--preset--font-family--primary);
-  font-weight: 400;
-}
-.btn:hover,
-.ff-btn:hover,
-input[type=submit]:hover,
-.sib-default-btn:hover,
-.wp-block-button .wp-block-button__link:hover {
-  color: #ffffff;
-  background-color: var(--wp--preset--color--secondary);
-}
-.btn:active,
-.ff-btn:active,
-input[type=submit]:active,
-.sib-default-btn:active,
-.wp-block-button .wp-block-button__link:active {
-  color: #ffffff;
-  background-color: var(--wp--preset--color--secondary);
-}
-
+.wp-block-button .wp-block-button__link,
 .is-style-btn-primary .wp-block-button__link,
 .btn-primary {
   display: inline-block;
@@ -1215,27 +1181,32 @@ input[type=submit]:active,
   cursor: pointer;
   border-radius: 4px;
   position: relative;
-  padding: 0.8em 1em;
+  padding: 1em 1.5em;
   line-height: 1;
   margin: 1em 0 1.1em 0;
-  color: var(--wp--preset--color--primary);
-  background: #ffffff;
-  border: 1px solid #ebebeb;
+  color: #fff;
+  background: var(--wp--preset--color--primary);
+  border: 1px solid var(--wp--preset--color--primary);
   overflow: hidden;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   font-family: var(--wp--preset--font-family--primary);
   font-weight: 400;
 }
+.btn:hover, .btn:active,
+.ff-btn:hover,
+.ff-btn:active,
+input[type=submit]:hover,
+input[type=submit]:active,
+.sib-default-btn:hover,
+.sib-default-btn:active,
+.wp-block-button .wp-block-button__link:hover,
+.wp-block-button .wp-block-button__link:active,
 .is-style-btn-primary .wp-block-button__link:hover,
-.btn-primary:hover {
-  color: #ffffff;
-  background-color: var(--wp--preset--color--primary);
-}
 .is-style-btn-primary .wp-block-button__link:active,
+.btn-primary:hover,
 .btn-primary:active {
-  color: #ffffff;
-  background-color: var(--wp--preset--color--primary);
+  opacity: 0.7;
 }
 
 .is-style-btn-secondary .wp-block-button__link,
@@ -1246,27 +1217,22 @@ input[type=submit]:active,
   cursor: pointer;
   border-radius: 4px;
   position: relative;
-  padding: 0.8em 1em;
+  padding: 1em 1.5em;
   line-height: 1;
   margin: 1em 0 1.1em 0;
-  color: var(--wp--preset--color--secondary);
-  background: #ffffff;
-  border: 1px solid #ebebeb;
+  color: #fff;
+  background: var(--wp--preset--color--secondary);
+  border: 1px solid var(--wp--preset--color--secondary);
   overflow: hidden;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   font-family: var(--wp--preset--font-family--primary);
   font-weight: 400;
 }
-.is-style-btn-secondary .wp-block-button__link:hover,
-.btn-secondary:hover {
-  color: #ffffff;
-  background-color: var(--wp--preset--color--secondary);
-}
-.is-style-btn-secondary .wp-block-button__link:active,
+.is-style-btn-secondary .wp-block-button__link:hover, .is-style-btn-secondary .wp-block-button__link:active,
+.btn-secondary:hover,
 .btn-secondary:active {
-  color: #ffffff;
-  background-color: var(--wp--preset--color--secondary);
+  opacity: 0.7;
 }
 
 .fluentform {
@@ -1600,6 +1566,14 @@ input[type=file]:focus {
   color: inherit;
 }
 
+.wp-block-columns {
+  gap: 1.5em;
+}
+@media screen and (min-width: 1200px) {
+  .wp-block-columns {
+    gap: 2em;
+  }
+}
 .wp-block-columns.is-style-reverse {
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
@@ -1940,7 +1914,7 @@ figure {
   cursor: pointer;
   border-radius: 4px;
   position: relative;
-  padding: 0.8em 1em;
+  padding: 1em 1.5em;
   line-height: 1;
   margin: 1em 0 1.1em 0;
   color: #ffffff;
@@ -1956,13 +1930,8 @@ figure {
   z-index: 10;
   padding: 0.6em 1em !important;
 }
-.block-header-slider .wrapper .container .inner .header-btn:hover {
-  color: transparent;
-  background-color: #ffffff;
-}
-.block-header-slider .wrapper .container .inner .header-btn:active {
-  color: transparent;
-  background-color: #ffffff;
+.block-header-slider .wrapper .container .inner .header-btn:hover, .block-header-slider .wrapper .container .inner .header-btn:active {
+  opacity: 0.7;
 }
 .block-header-slider .wrapper .container .inner .header-btn:hover, .block-header-slider .wrapper .container .inner .header-btn:active {
   color: var(--wp--preset--color--secondary) !important;
@@ -2116,7 +2085,110 @@ figure {
 }
 @media screen and (min-width: 1200px) {
   .page-template-has-pageheader .block-header-slider,
-  .page-template-has-pageheader .page-header {
+  .page-template-has-pageheader .pageheader {
     margin-top: -80px;
   }
+}
+
+.pageheader {
+  position: relative;
+  overflow: hidden;
+}
+.pageheader:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.pageheader:after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  z-index: 10;
+  background-color: #fff;
+  height: 500px;
+  border-radius: 100%;
+  left: -50%;
+  top: calc(100% - 50px);
+}
+@media screen and (min-width: 420px) {
+  .pageheader:after {
+    top: calc(100% - 150px);
+  }
+}
+@media screen and (min-width: 550px) {
+  .pageheader:after {
+    top: calc(100% - 150px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .pageheader:after {
+    top: calc(100% - 50px);
+  }
+}
+.pageheader img {
+  width: 300%;
+  height: auto;
+  max-width: unset !important;
+  margin-left: -100%;
+}
+@media screen and (min-width: 768px) {
+  .pageheader img {
+    width: 150%;
+    margin-left: -33%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .pageheader img {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.pageheader .pageheader-content {
+  z-index: 2;
+  position: absolute;
+  top: -75px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.pageheader .pageheader-content * {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .pageheader .pageheader-content {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .pageheader .pageheader-content * {
+    max-width: 66%;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .pageheader .pageheader-content * {
+    max-width: 66%;
+  }
+}
+.pageheader .pageheader-content * {
+  color: #fff;
 }

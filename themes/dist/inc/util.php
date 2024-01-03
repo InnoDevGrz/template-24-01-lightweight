@@ -66,6 +66,20 @@ function tsc_create_html($before, $after, $content)
 
 }
 
+function tsc_create_html_by_tagname($tagname, $class, $content)
+{
+	if (!empty($content)):
+		$html = "<$tagname class='$class'>";
+		$html .= $content;
+		$html .= "</$tagname>";
+
+		return $html;
+	endif;
+
+}
+
+
+
 
 /*** post archive functions *** */
 function get_tsc_category_list($post_type, $taxonomy)

@@ -1,7 +1,8 @@
 /* A N I M A T I O N S */
 /****************************************************/
 
-.block-header-slider img {
+.block-header-slider img,
+.pageheader img{
   animation: scaleAnimation 11s infinite;
 }
 @keyframes scaleAnimation {

@@ -14,6 +14,10 @@
 }
 
 .wp-block-columns {
+  gap: 1.5em;
+  @media screen and (min-width: $lg) {
+    gap: 2em;
+  }
   &.is-style-reverse {
     flex-wrap: wrap-reverse;
   }
