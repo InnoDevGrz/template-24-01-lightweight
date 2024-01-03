@@ -9,7 +9,7 @@ Requires at least: 6.0
 Requires PHP: > 8.0
 Text-Domain: ize
  */
-/* *** columns *** */
+/* *** COLUMNS *** */
 /* *** HEADLINES *** */
 /* *** WIDGETS *** */
 /* *** FOOTER *** */
@@ -796,7 +796,7 @@ ul.is-style-check li:before {
     left: 0;
     top: 10px;
     width: 100%;
-    background-color: var(--wp--preset--color--base);
+    background-color: #fff;
   }
 }
 @media (min-width: 1200px) {
@@ -1133,20 +1133,9 @@ section,
 @media screen and (min-width: 1200px) {
   section,
   .is-style-section {
-    padding-top: 6em;
-    padding-bottom: 6em;
+    padding-top: 5em;
+    padding-bottom: 5em;
   }
-}
-@media screen and (min-width: 1920px) {
-  section,
-  .is-style-section {
-    padding-top: 6.9em;
-    padding-bottom: 6.9em;
-  }
-}
-
-.no-bottom-margin {
-  padding-bottom: 0 !important;
 }
 
 .tsc-icon {
@@ -1550,12 +1539,12 @@ input[type=file]:focus {
 }
 @media screen and (min-width: 1200px) {
   .has-background {
-    padding: 6em;
+    padding: 5em;
   }
 }
 @media screen and (min-width: 1920px) {
   .has-background {
-    padding: 6.9em;
+    padding: 5.75em;
   }
 }
 .has-background a:not(.btn):not(.btn-primary):not(.is-style-btn-primary):not(.btn-secondary):not(.is-style-btn-secondary) {
@@ -1580,7 +1569,7 @@ input[type=file]:focus {
   -ms-flex-wrap: wrap-reverse !important;
       flex-wrap: wrap-reverse !important;
 }
-.wp-block-columns .wp-block-column > *:first-of-type {
+.wp-block-columns .wp-block-column:not(.is-style-section) > *:first-of-type {
   margin-top: 0;
 }
 
@@ -2067,6 +2056,9 @@ figure {
   .page-template-has-pageheader #navbar #primary-nav ul > label {
     color: #fff;
   }
+  .page-template-has-pageheader #navbar #primary-nav ul > li a:hover:before {
+    background-color: #fff;
+  }
   .page-template-has-pageheader #navbar #primary-nav .follow * {
     color: #fff;
   }
@@ -2078,9 +2070,12 @@ figure {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.page-template-has-pageheader #navbar.scroll-up.recolor #primary-nav ul > li:not(.current-menu-item):not(.current-parent-item) a,
-.page-template-has-pageheader #navbar.scroll-up.recolor #primary-nav ul > label {
+.page-template-has-pageheader #navbar.scroll-up.recolor #primary-nav .nav-menu li:not(.current-menu-item):not(.current-parent-item) a,
+.page-template-has-pageheader #navbar.scroll-up.recolor #primary-nav .nav-menu > label {
   color: var(--wp--preset--color--base);
+}
+.page-template-has-pageheader #navbar.scroll-up.recolor #primary-nav .nav-menu > li > a:hover:after {
+  background-color: var(--wp--preset--color--base) !important;
 }
 .page-template-has-pageheader #navbar.scroll-up.recolor #primary-nav .follow * {
   color: var(--wp--preset--color--base);
@@ -2093,6 +2088,10 @@ figure {
 }
 
 .pageheader {
+  aspect-ratio: 16/7;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
   position: relative;
   overflow: hidden;
 }
@@ -2103,7 +2102,7 @@ figure {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 .pageheader:after {
@@ -2122,32 +2121,28 @@ figure {
     top: calc(100% - 150px);
   }
 }
-@media screen and (min-width: 550px) {
-  .pageheader:after {
-    top: calc(100% - 150px);
-  }
-}
 @media screen and (min-width: 768px) {
   .pageheader:after {
     top: calc(100% - 50px);
   }
 }
 .pageheader img {
-  width: 300%;
   height: auto;
-  max-width: unset !important;
-  margin-left: -100%;
+  width: 200%;
+  max-width: 200% !important;
+  margin-left: -25%;
 }
 @media screen and (min-width: 768px) {
   .pageheader img {
-    width: 150%;
+    height: auto;
+    width: 100%;
     margin-left: -33%;
   }
 }
 @media screen and (min-width: 992px) {
   .pageheader img {
     margin-left: 0;
-    width: 100%;
+    height: auto;
   }
 }
 .pageheader .pageheader-content {

@@ -19,8 +19,7 @@ $ph_button_title = $pageheader['btn']['title'];
 if ( $pageheader ):
 	if ( ! empty ( $pageheader['pageheader_image'] ) ) : ?>
 
-        <header class="pageheader">
-			<?php echo wp_get_attachment_image( $ph_img, 'full' ); ?>
+        <header class="pageheader" style="background-image: url(<?php echo wp_get_attachment_image_url( $ph_img, 'full' ); ?>);">
             <div class="pageheader-content container">
 				<?php
 				echo tsc_create_html_by_tagname( $ph_title_tag, 'title', $ph_title );

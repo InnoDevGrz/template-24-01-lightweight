@@ -76,19 +76,9 @@ section,
     padding-top: $section-padding-desktop;
     padding-bottom: $section-padding-desktop;
   }
-  @media screen and (min-width: $fz) {
-    padding-top: calc($section-padding-desktop * 1.15);
-    padding-bottom: calc($section-padding-desktop * 1.15);
-  }
 }
 
 
-
-
-
-.no-bottom-margin {
-  padding-bottom: 0 !important;
-}
 
 
 .tsc-icon {

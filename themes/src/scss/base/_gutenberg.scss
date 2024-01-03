@@ -31,7 +31,7 @@
     flex-wrap: wrap-reverse !important;
   }
 
-  .wp-block-column {
+  .wp-block-column:not(.is-style-section) {
     //margin-bottom: 1.5em;
     > *:first-of-type {
       margin-top: 0;

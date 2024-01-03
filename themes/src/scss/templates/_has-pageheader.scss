@@ -11,6 +11,13 @@
         ul > label{
           color: #fff;
         }
+        ul > li a:hover{
+          &:before{
+            background-color: #fff;
+          }
+        }
+
+
         .follow * {
           color: #fff;
         }
@@ -24,10 +31,24 @@
         box-shadow: 0 4px 13px -6px rgba(0, 0, 0, 0.3);
         transition: all 0.3s ease-in-out;
         #primary-nav{
-          ul > li:not(.current-menu-item):not(.current-parent-item) a,
-          ul > label{
-            color: $nav-color-desktop;
+          .nav-menu{
+            li:not(.current-menu-item):not(.current-parent-item) a,
+            > label{
+              color: $nav-color-desktop;
+            }
+
+            > li > a{
+              &:hover {
+                &:after {
+                  background-color: $nav-color!important;
+                }
+              }
+            }
+
+
           }
+
+
           .follow * {
             color: $nav-color-desktop;
           }
@@ -49,6 +70,11 @@
 
 }
 .pageheader{
+  aspect-ratio: 16 / 7;
+  //width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
   position: relative;
   overflow: hidden;
   &:before{
@@ -58,7 +84,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0, 0.5);
+    background-color: rgba(0,0,0, 0.6);
     z-index: 1;
   }
   &:after{
@@ -77,10 +103,6 @@
       top: calc(100% - 150px);
     }
 
-    @media screen and (min-width: 550px) {
-      top: calc(100% - 150px);
-    }
-
 
     @media screen and (min-width: $sm) {
       top: calc(100% - 50px);
@@ -88,17 +110,19 @@
   }
 
   img{
-    width: 300%;
     height: auto;
-    max-width: unset !important;
-    margin-left: -100%;
+    width: 200%;
+    max-width: 200% !important;
+    margin-left: -25%;
     @media screen and (min-width: $sm) {
-      width: 150%;
+      height: auto;
+      width: 100%;
       margin-left: -33%;
     }
     @media screen and (min-width: $md) {
       margin-left: 0;
-     width: 100%;
+
+      height: auto;
     }
   }
   .pageheader-content{
@@ -117,6 +141,9 @@
     *{
       text-align: center;
     }
+
+
+
     @media screen and (min-width: $sm) {
       align-items: flex-start;
       * {
