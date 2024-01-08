@@ -30,7 +30,12 @@ for (const task of css_tasks) {
 
 }
 
-
+for (const task of js_tasks) {
+    const mx = mix.js(task.file, task.dest)
+    if (!mx.inProduction()) {
+        mx.sourceMaps();
+    }
+}
 
 
 
