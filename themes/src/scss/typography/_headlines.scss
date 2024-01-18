@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-family: $headline-font-family;
   font-weight: $headline-font-weight;
   color: $headline-color;
@@ -7,27 +7,31 @@ h1, h2, h3, h4, h5 {
   margin-bottom: .3em;
   position: relative;
 }
-$headline-font-size-mobile: $base-font-size-mobile;
-$headline-font-size-desktop: $headline-font-size-mobile;
+$headline-font-size:1rem;
+
 
 h1 {
-  font-size: $headline-font-size-mobile * 2.5;
+  font-size: $headline-font-size * 4;
 }
 
 h2:not(.post-title) {
-  font-size: $headline-font-size-mobile * 2;
+  font-size: $headline-font-size * 3;
 }
 
 h3 {
-  font-size: $headline-font-size-mobile * 1.7;
+  font-size: $headline-font-size * 2;
 }
 
 h4:not(.post-title) {
-  font-size: $headline-font-size-mobile 1.25;
+  font-size: $headline-font-size 1.5;
 }
 
 h5 {
-  font-size: $headline-font-size-mobile * 1;
+  font-size: $headline-font-size * 1.25;
+}
+
+h6 {
+  font-size: $headline-font-size;
 }
 
 
@@ -35,23 +39,27 @@ h5 {
 @media screen and (min-width: $sm) {
 
   h1 {
-    font-size: $headline-font-size-desktop * 2.5;
+    font-size: $headline-font-size * 6;
   }
 
   h2:not(.post-title) {
-    font-size: $base-font-size-desktop * 2;
+    font-size: $headline-font-size * 4;
   }
 
   h3 {
-    font-size: $base-font-size-desktop * 1.75;
+    font-size: $headline-font-size * 2;
   }
 
   h4:not(.post-title) {
-    font-size: $base-font-size-desktop 1.5;
+    font-size: $headline-font-size 1.5;
   }
 
   h5 {
-    font-size: $base-font-size-desktop * 1.25;
+    font-size: $headline-font-size * 1.25;
+  }
+
+  h6 {
+    font-size: $headline-font-size;
   }
 
 }
