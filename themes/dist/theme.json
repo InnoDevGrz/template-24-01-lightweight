@@ -134,6 +134,11 @@
           "slug": "5rem",
           "size": "5rem",
           "name": "5rem"
+        },
+        {
+          "slug": "6rem",
+          "size": "6rem",
+          "name": "6rem"
         }
       ]
     },
