@@ -5,17 +5,20 @@
 
 <?php
 $pageheader      = get_field( 'pageheader', get_the_ID() );
-$ph_img          = $pageheader['pageheader_image'];
-$ph_title        = $pageheader['title'];
-$ph_title_tag    = $pageheader['title_tag'];
-$ph_subtitle     = $pageheader['subtitle'];
-$ph_subtitle_tag = $pageheader['subtitle_tag'];
-$ph_text         = $pageheader['text'];
-$ph_button_url   = $pageheader['btn']['url'];
-$ph_button_title = $pageheader['btn']['title'];
-?>
+if ($pageheader){
+	$ph_img          = $pageheader['pageheader_image'];
+	$ph_title        = $pageheader['title'];
+	$ph_title_tag    = $pageheader['title_tag'];
+	$ph_subtitle     = $pageheader['subtitle'];
+	$ph_subtitle_tag = $pageheader['subtitle_tag'];
+	$ph_text         = $pageheader['text'];
+	if (!empty($pageheader['btn'])){
+		$ph_button_url   = $pageheader['btn']['url'];
+		$ph_button_title = $pageheader['btn']['title'];
+	}
+}
 
-<?php
+
 if ( $pageheader ):
 	if ( ! empty ( $pageheader['pageheader_image'] ) ) : ?>
 
@@ -36,6 +39,7 @@ if ( $pageheader ):
 	endif;
 endif;
 ?>
+
 
     <main id="content" class="container no-bottom-margin" role="main">
 		<?php include( locate_template( 'template-parts/content.php' ) ); ?>
