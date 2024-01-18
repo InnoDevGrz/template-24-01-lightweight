@@ -5,7 +5,7 @@
     padding: $section-padding-desktop;
   }
   @media screen and (min-width: $fz) {
-    padding: calc($section-padding-desktop * 1.15);
+    padding: calc($section-padding-desktop * 1.25);
   }
 
   a:not(.btn):not(.btn-primary):not(.is-style-btn-primary):not(.btn-secondary):not(.is-style-btn-secondary) {
