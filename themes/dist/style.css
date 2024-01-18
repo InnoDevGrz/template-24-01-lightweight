@@ -797,7 +797,7 @@ ul.is-style-check li:before {
 }
 @media only screen and (min-width: 1200px) {
   #primary-nav .nav-menu > li > a:hover {
-    color: var(--wp--preset--color--base);
+    color: var(--wp--preset--color--third);
   }
   #primary-nav .nav-menu > li > a:hover:after {
     left: 0;

@@ -124,7 +124,6 @@
           margin-right: 0;
         }
         &:hover > .sub-menu {
-          color: $nav-active-color;
           opacity: 1;
           pointer-events: auto;
           z-index: -1;
@@ -187,7 +186,8 @@
         &:hover {
           color: $nav-active-color;
           @media only screen and (min-width: $breakpoint-nav) {
-            color: $nav-color-desktop;
+            color: $nav-active-color;
+          ;
             &:after {
               left: 0;
               top: 10px;
