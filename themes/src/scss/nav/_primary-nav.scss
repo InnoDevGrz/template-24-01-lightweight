@@ -124,6 +124,7 @@
           margin-right: 0;
         }
         &:hover > .sub-menu {
+          color: $nav-active-color;
           opacity: 1;
           pointer-events: auto;
           z-index: -1;
