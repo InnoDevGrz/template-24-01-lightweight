@@ -186,8 +186,8 @@
         &:hover {
           color: $nav-active-color;
           @media only screen and (min-width: $breakpoint-nav) {
-            color: $nav-active-color;
-          ;
+            color: $nav-active-color-desktop;
+
             &:after {
               left: 0;
               top: 10px;
