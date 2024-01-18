@@ -91,29 +91,29 @@
       "dropCap": false,
       "fontSizes": [
         {
-          "slug": "small",
-          "size": "0.6rem",
-          "name": "small"
+          "slug": "0.5rem",
+          "size": "0.5rem",
+          "name": "0.5rem"
         },
         {
-          "slug": "medium-small",
-          "size": "0.8rem",
-          "name": "medium-small"
+          "slug": "0.75rem",
+          "size": "0.75rem",
+          "name": "0.75rem"
         },
         {
-          "slug": "normal",
+          "slug": "1rem",
           "size": "1rem",
-          "name": "normal"
+          "name": "1rem"
         },
         {
-          "slug": "medium",
-          "size": "1.2rem",
-          "name": "Medium"
+          "slug": "1.25rem",
+          "size": "1.25rem",
+          "name": "1.25rem"
         },
         {
-          "slug": "medium_large",
+          "slug": "1.5rem",
           "size": "1.5rem",
-          "name": "Medium-Large"
+          "name": "1.5rem"
         },
         {
           "slug": "large",
@@ -121,19 +121,19 @@
           "name": "Large"
         },
         {
-          "slug": "xlarge",
+          "slug": "3rem",
           "size": "3rem",
-          "name": "X-Large"
+          "name": "3rem"
         },
         {
-          "slug": "xxlarge",
+          "slug": "4rem",
           "size": "4rem",
-          "name": "X-Large"
+          "name": "4rem"
         },
         {
-          "slug": "xxxlarge",
-          "size": "6rem",
-          "name": "X-Large"
+          "slug": "5rem",
+          "size": "5rem",
+          "name": "5rem"
         }
       ]
     },
