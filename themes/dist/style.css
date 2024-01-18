@@ -2171,7 +2171,7 @@ figure {
 .pageheader .pageheader-content {
   z-index: 2;
   position: absolute;
-  top: -75px;
+  top: 60px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -2192,6 +2192,11 @@ figure {
 }
 .pageheader .pageheader-content * {
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .pageheader .pageheader-content {
+    top: var(--wp--preset--color--third);
+  }
 }
 @media screen and (min-width: 768px) {
   .pageheader .pageheader-content {

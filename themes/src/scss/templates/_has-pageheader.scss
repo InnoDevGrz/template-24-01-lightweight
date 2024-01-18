@@ -158,10 +158,12 @@
       text-align: center;
     }
 
-
+    @media screen  and (min-width: $breakpoint-nav){
+      top: $nav-active-color-desktop;
+    }
 
     @media screen and (min-width: $sm) {
-      top: $nav-active-color-desktop;
+
       align-items: flex-start;
       * {
         max-width: 66%;
