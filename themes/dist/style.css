@@ -2135,18 +2135,10 @@ figure {
     top: calc(100% - 50px);
   }
 }
-@media screen and (min-width: 600px) {
-  .pageheader {
-    height: 50vh;
-    margin-bottom: 3em;
-  }
-}
 @media screen and (min-width: 992px) {
   .pageheader {
-    background-position-x: unset;
+    background-position: center;
     background-size: contain;
-    aspect-ratio: 16/7;
-    height: unset;
   }
 }
 .pageheader img {

@@ -113,21 +113,16 @@
 
 
   // responsive dims:
+  // responsive dims:
   background-size: cover;
   height: 75vh;
   background-position-x: center;
-  @media screen and (min-width: $xs) {
-    height: 50vh;
-    margin-bottom: 3em;
-  }
 
   @media screen and (min-width: $md) {
-    background-position-x: unset;
-    background-size: cover;
-    aspect-ratio: 16 / 7;
-    height: unset;
-
+    background-position: center;
+    background-size: contain;
   }
+
 
 
   img {
