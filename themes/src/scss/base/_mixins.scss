@@ -1,0 +1,8 @@
+@mixin section{
+  padding-top: $section-padding-mobile;
+  padding-bottom: $section-padding-mobile;
+  @media screen and (min-width: $breakpoint-nav) {
+    padding-top: $section-padding-desktop;
+    padding-bottom: $section-padding-desktop;
+  }
+}
