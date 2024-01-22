@@ -71,6 +71,7 @@
 /* *** S E C T I O N S *** */
 
 section,
+.section,
 .is-style-section {
   @include section();
 }
