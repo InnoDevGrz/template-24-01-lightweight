@@ -20,10 +20,11 @@ $base-border-color: var(--wp--preset--color--border);
 
 
 /* *** COLUMNS *** */
-$column-gap: 2em;
-$section-padding-mobile: 2em;
-$section-padding-desktop: 5em;
-
+$column-gap: 1rem;
+$section-spacing-mobile: 1rem;
+$section-spacing-desktop: 6rem ;
+$background-spacing-mobile: $section-spacing-mobile;
+$background-spacing-desktop: $section-spacing-desktop;
 
 // N A V *********************
 $nav-font-family: $primary-font-family;

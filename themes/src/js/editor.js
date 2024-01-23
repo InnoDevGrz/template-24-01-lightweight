@@ -16,16 +16,15 @@ wp.domReady(() => {
         name: 'image-shadow',
         label: 'Image Shadow',
     });
-
-    wp.blocks.registerBlockStyle('core/group', {
-        name: 'section',
-        label: 'Section',
-    });
-
     wp.blocks.registerBlockStyle('core/columns', {
-        name: 'section',
-        label: 'Section',
+        name: 'no-spacing',
+        label: 'No Spacing',
     });
+    wp.blocks.registerBlockStyle('core/group', {
+        name: 'no-spacing',
+        label: 'No Spacing',
+    });
+
 
 
     /*** Lists **/
@@ -59,7 +58,6 @@ wp.domReady(() => {
         name: 'btn-secondary',
         label: 'Secondary',
     });
-
 
 
 

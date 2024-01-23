@@ -1,8 +1,9 @@
-@mixin section{
-  padding-top: $section-padding-mobile;
-  padding-bottom: $section-padding-mobile;
+@mixin section-spacing(){
+  margin-top: $section-spacing-mobile;
+  margin-bottom: $section-spacing-mobile;
   @media screen and (min-width: $breakpoint-nav) {
-    padding-top: $section-padding-desktop;
-    padding-bottom: $section-padding-desktop;
+    margin-top: $section-spacing-desktop;
+    margin-bottom: $section-spacing-desktop;
   }
 }
+
