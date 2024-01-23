@@ -25,6 +25,16 @@ wp.domReady(() => {
         label: 'No Spacing',
     });
 
+    wp.blocks.registerBlockStyle('core/columns', {
+        name: 'no-margin',
+        label: 'No Margin',
+    });
+    wp.blocks.registerBlockStyle('core/group', {
+        name: 'no-margin',
+        label: 'No Margin',
+    });
+
+
 
 
     /*** Lists **/
