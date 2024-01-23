@@ -1096,6 +1096,13 @@ ul.is-style-check li:before {
   }
 }
 
+@media (min-width: 768px) {
+  .is-style-container-small {
+    max-width: 975px;
+    margin: 0 auto;
+  }
+}
+
 #content > .wp-block-columns {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1567,6 +1574,11 @@ input[type=file]:focus {
   margin-bottom: 0 !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+}
+
+.is-style-no-margin {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .has-parallax {

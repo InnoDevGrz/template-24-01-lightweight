@@ -34,6 +34,15 @@ wp.domReady(() => {
         label: 'No Margin',
     });
 
+    wp.blocks.registerBlockStyle('core/columns', {
+        name: 'container-small',
+        label: 'Container Small',
+    });
+    wp.blocks.registerBlockStyle('core/group', {
+        name: 'container-small',
+        label: 'Container Small',
+    });
+
 
 
 

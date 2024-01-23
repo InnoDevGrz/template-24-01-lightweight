@@ -27,6 +27,15 @@
   }
 }
 
+.is-style-container-small{
+  @media (min-width: $sm) {
+    max-width: calc($container-width-desktop * 0.65);
+    margin: 0 auto;
+  }
+}
+
+
+
 #content > .wp-block-columns
 {
   @include section-spacing();
