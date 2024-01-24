@@ -71,14 +71,16 @@
 }
 
 .has-background {
-  padding-top: $background-spacing-mobile;
-  padding-bottom: $background-spacing-mobile;
+  padding: $background-spacing-mobile;
   @media screen and (min-width: $breakpoint-nav) {
-    padding-top: $background-spacing-desktop;
-    padding-bottom: $background-spacing-desktop;
-
+    padding: $background-spacing-desktop / 2 ;
   }
 
+  &.wp-block-columns{
+    @media screen and (min-width: $breakpoint-nav) {
+      padding: $background-spacing-desktop ;
+    }
+  }
 
   a:not(.btn):not(.btn-primary):not(.is-style-btn-primary):not(.btn-secondary):not(.is-style-btn-secondary) {
     color: inherit;
@@ -110,4 +112,8 @@
 
 .tsc-icon {
   width: 100px;
+}
+
+.m-h-6 {
+  min-height: 6rem;
 }
