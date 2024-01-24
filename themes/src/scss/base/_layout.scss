@@ -2,6 +2,7 @@
   min-height: 60vh;
   padding-bottom: 3rem;
   @media only screen and (min-width: $md) {
+    padding-top: 3rem;
     padding-bottom: 6rem;
   }
 
@@ -25,41 +26,57 @@
     padding-left: $container-padding-desktop;
     max-width: $container-width-desktop;
   }
+
+
 }
 
-.is-style-container-small{
+.alignfull {
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  max-width: 100vw;
+  width: 100vw;
+}
+
+.is-style-container-small {
   @media (min-width: $sm) {
     max-width: calc($container-width-desktop * 0.65);
     margin: 0 auto;
   }
 }
 
-
-
-#content > .wp-block-columns
-{
-  @include section-spacing();
-}
-#content > .wp-block-group{
-  @include section-spacing();
+.no-gap-mobile {
+  @media screen and (max-width: 781px) {
+    gap: 0 !important;
+  }
 }
 
 
+#content > .wp-block-columns {
+  @include section-spacing();
+}
+
+#content > .wp-block-group {
+  @include section-spacing();
+}
 
 .wp-block-columns {
   gap: $column-gap;
   @media screen and (min-width: $breakpoint-nav) {
     gap: calc($column-gap * 2);
   }
+
   &.is-style-reverse {
     flex-wrap: wrap-reverse !important;
   }
 }
 
 .has-background {
-  padding: $background-spacing-mobile;
+  padding-top: $background-spacing-mobile;
+  padding-bottom: $background-spacing-mobile;
   @media screen and (min-width: $breakpoint-nav) {
-    padding: $background-spacing-desktop;
+    padding-top: $background-spacing-desktop;
+    padding-bottom: $background-spacing-desktop;
+
   }
 
 
@@ -70,28 +87,27 @@
       text-decoration: none;
     }
   }
+
   h1, h2, h3, h4, h5, h6 {
     color: inherit;
   }
+
 }
 
-.alignfull {
-  margin-right: calc(50% - 50vw);
-  margin-left: calc(50% - 50vw);
-  max-width: 100vw;
-  width: 100vw;
-}
+
+
 
 .alignwide {
   margin-right: calc(25% - 25vw);
   margin-left: calc(25% - 25vw);
 }
 
+
 .noscroll {
   overflow: hidden;
 }
 
+
 .tsc-icon {
   width: 100px;
 }
-
