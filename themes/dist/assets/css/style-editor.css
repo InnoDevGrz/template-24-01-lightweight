@@ -361,12 +361,28 @@ input[type=submit]:active,
 
 @media screen and (min-width: 992px) {
   .is-style-overlap-content > .has-background:nth-of-type(2) {
-    -webkit-transform: translateY(4rem) translateX(-5rem);
-            transform: translateY(4rem) translateX(-5rem);
+    -webkit-box-shadow: 3px 3px 3px, rgba(0, 0, 0, 0.1);
+            box-shadow: 3px 3px 3px, rgba(0, 0, 0, 0.1);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-transform: translateX(-18%);
+            transform: translateX(-18%);
+    -ms-flex-item-align: center !important;
+        align-self: center !important;
+    padding: 4.5rem;
   }
   .is-style-overlap-content > .has-background:nth-of-type(1) {
-    -webkit-transform: translateY(4rem) translateX(5rem);
-            transform: translateY(4rem) translateX(5rem);
+    -webkit-box-shadow: 3px 3px 3px, rgba(0, 0, 0, 0.1);
+            box-shadow: 3px 3px 3px, rgba(0, 0, 0, 0.1);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -ms-flex-item-align: center !important;
+        align-self: center !important;
+    -webkit-transform: translateX(18%);
+            transform: translateX(18%);
+    padding: 4.5rem;
   }
 }
 
