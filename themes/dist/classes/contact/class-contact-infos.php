@@ -87,7 +87,7 @@ class tsc__ContactInfos
     {
         if (!empty($this->phone)):
             $icon = '<i class="tsc-icon flaticon-telephone"  aria-hidden="true"></i>';
-            $url = 'tel:' . preg_replace("/[^\+\d]+/", "", $this->phone);
+	        $url = 'tel:' . preg_replace(["/[^\+\d]+/", "/^\+430/", "/^00430/"], ["", "+43", "0043"], $phone);
             return '<a aria-label="' . esc_attr__('Call now', 'ize') . '" href="' . $url . '">' . $icon . '</a>';
         endif;
 
