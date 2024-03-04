@@ -59,10 +59,8 @@ class tsc__ContactInfos
     public function get_phoneLink()
     {
         if (!empty($this->phone)):
-            ;
-            $url = 'tel:' . preg_replace("/[^\+\d]+/", "", $this->phone);
-            $phone_no = str_replace('0043', "+43", $this->phone);
-            return '<a href="' . $url . '">' . $phone_no . '</a>';
+	        $url = 'tel:' . preg_replace(["/[^\+\d]+/", "/^\+430/", "/^00430/"], ["", "+43", "0043"], $this->phone);
+            return '<a href="' . $url . '">' . $this->phone . '</a>';
         endif;
     }
 
@@ -87,7 +85,7 @@ class tsc__ContactInfos
     {
         if (!empty($this->phone)):
             $icon = '<i class="tsc-icon flaticon-telephone"  aria-hidden="true"></i>';
-	        $url = 'tel:' . preg_replace(["/[^\+\d]+/", "/^\+430/", "/^00430/"], ["", "+43", "0043"], $phone);
+	        $url = 'tel:' . preg_replace(["/[^\+\d]+/", "/^\+430/", "/^00430/"], ["", "+43", "0043"], $this->phone);
             return '<a aria-label="' . esc_attr__('Call now', 'ize') . '" href="' . $url . '">' . $icon . '</a>';
         endif;
 

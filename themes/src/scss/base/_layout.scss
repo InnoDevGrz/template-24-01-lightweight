@@ -79,8 +79,8 @@
 
   &.wp-block-columns{
     @media screen and (min-width: $breakpoint-nav) {
-      padding-top: $background-spacing-desktop ;
-      padding-bottom: $background-spacing-desktop ;
+      padding: $background-spacing-desktop ;
+
     }
 
   }
