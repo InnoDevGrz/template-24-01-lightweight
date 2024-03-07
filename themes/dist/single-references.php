@@ -35,11 +35,11 @@
             <?php
 	        wp_enqueue_script('justifiedgallery-js');
 	        wp_enqueue_script('colorbox-js');
-
+	        wp_enqueue_script('gallery-js');
 	        wp_enqueue_style('colorbox-css');
 	        wp_enqueue_style('justifiedgallery-css');
 
-	        wp_enqueue_script('gallery-js');
+
             ?>
 
             <aside class="single-justified-gallery">
