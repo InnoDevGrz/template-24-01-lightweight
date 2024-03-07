@@ -7,7 +7,7 @@
 
 
 
-        $('.accordion-gallery ').justifiedGallery({
+        jQuery('.accordion-gallery ').justifiedGallery({
             lastRow : 'nojustify',
             rowHeight : 150,
             maxRowHeight: 150,
@@ -27,7 +27,7 @@
             });
         });
 
-        $('.block-justified-gallery').justifiedGallery({
+        jQuery('.block-justified-gallery').justifiedGallery({
             lastRow : 'justify',
             rowHeight : 300,
             maxRowHeight: 350,
@@ -47,15 +47,14 @@
             });
         });
 
-        $('.single-justified-gallery').justifiedGallery({
+        jQuery('.single-justified-gallery').justifiedGallery({
             lastRow : 'justify',
             rowHeight : 300,
             maxRowHeight: 350,
-            rel : 'justified-gallery',
+            rel : 'gallery1',
             margins : '30px',
             randomize: true,
             captions: true,
-
 
         }).on('jg.complete', function () {
             $(this).find('a').colorbox({
@@ -63,7 +62,7 @@
                 maxHeight : '100%',
                 opacity : 0.8,
                 transition : 'elastic',
-                current : ''
+                current : '',
             });
         });
 
@@ -72,4 +71,3 @@
 
 
 })(jQuery);
-
